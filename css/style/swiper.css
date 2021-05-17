@@ -1,0 +1,59 @@
+.swiper-container{
+  /* border:1px solid yellow; */
+  width: 590px;
+  position: absolute;
+  left:-560px;
+  top:-735px;
+  /* border:1px solid red; */
+}
+
+.mySwiper2, .mySwiper4 , .mySwiper6, .mySwiper8{
+  /* border:1px solid red; */
+  width: 450px;
+  height:450px;
+  /* position: absolute; */
+  /* left: -230px; */
+
+
+}
+
+
+.swiper-slide img {
+  /* display: inline-block; */
+  width: 200px;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  background-size: cover;
+  /* background-position: center; */
+}
+
+
+
+.mySwiper, .mySwiper3  , .mySwiper5, .mySwiper7{
+  /* border: 1px solid red; */
+  width: 450px;
+  margin-top: 10px;
+  /* position: absolute; */
+  /* left: -230px; */
+
+}
+
+.mySwiper .swiper-slide, .mySwiper3 .swiper-slide, .mySwiper5 .swiper-slide, .mySwiper7 .swiper-slide {
+  /* border: 1px solid blue; */
+  width: 100px;
+  height: 100px;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active, .mySwiper3 .swiper-slide-thumb-active, .mySwiper5 .swiper-slide-thumb-active, .mySwiper7 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

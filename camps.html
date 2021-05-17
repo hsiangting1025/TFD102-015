@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>SOME VILLAGE</title>
+  <link href="./css/camps.css" rel="stylesheet">
+  <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <a href="./index.html">
+        <img src="./images/logo_2.svg" alt="" class="logo">
+      </a>
+      <ul class="nav_list">
+        <li>
+          <a href="./camps.html" class="menu_1" id="on">帳篷旅館<p>Camps</p></a>
+        </li>
+        <li>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+        </li>
+        <li>
+          <a href="./kitchen.html" class="menu_3">美食饗宴<p>Kitchen</p></a>
+        </li>
+        <li>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+        </li>
+        <li>
+          <a href="./location.html" class="menu_5">交通指南<p>Location</p></a>
+        </li>
+        <li>
+          <a href="./order.html" class="menu_6">預約入村<p>Order</p></a>
+        </li>
+        <li>
+          <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <div class="side_parent_bt"  data-aos="fade-left" data-aos-duration="1000">
+    <a href="./order.html" class="side_bt1">
+      <h3 class="s_bt1">預約入村<p>Order</p></h3>
+    </a>
+  </div>
+
+
+  <main>
+    <div class="tab">
+      <button class="tablinks tab_1" onclick="openRoom(event, 'DT')" id="defaultOpen">
+        <h3 class="bt1">兩人帳 一大床
+          <p>Double Tent</p>
+        </h3>
+      </button>
+      <button class="tablinks tab_2" onclick="openRoom(event, 'TT')">
+        <h3 class="bt2">兩人帳 兩小床
+          <p>Twin Tent</p>
+        </h3>
+      </button>
+      <button class="tablinks tab_3" onclick="openRoom(event, 'DDT')">
+        <h3 class="bt2">四人帳 兩大床
+          <p>Double2 Tent</p>
+        </h3>
+      </button>
+      <button class="tablinks tab_4" onclick="openRoom(event, 'QT')">
+        <h3 class="bt2">四人帳 四小床
+          <p>Quad Tent</p>
+        </h3>
+      </button>
+    </div>
+
+
+    <div id="DT" class="tabcontent">
+      <span class="line"></span>
+      <h1>豪華兩人帳 一大床</h1>
+      <h2>Double Tent</h2>
+      <h4>全村帳數：4帳<br>
+        入住人數：2人    &nbsp;&nbsp;  *每帳限加一床，最多三位入住<br>
+        設施與備品：冷暖空調、夜燈、充電插座
+        <a href="#" class="more" onclick="document.getElementById('more').style.display='block'">&nbsp;more...</a>
+      </h4>
+      <table>
+        <tr bgcolor="#DDC4B9">
+          <td>平日</td>
+          <td>假日</td>
+          <td>特殊假日</td>
+        </tr>
+        <tr>
+          <td>$ 5,300</td>
+          <td>$ 7,100</td>
+          <td>$ 7,100</td>
+        </tr>
+      </table>
+      <h5>
+        a.未滿3歲嬰幼兒均不收取費用。<br>
+        b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
+        &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
+        c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
+        &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
+        <br>
+        <br>
+        ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
+        ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
+        ．平日定義：非連續假期的週日～週四。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
+        ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+      </h5>
+
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
+      class="swiper-container mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/room/a_1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_5.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div thumbsSlider="" class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/room/a_1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/room/a_5.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="TT" class="tabcontent">
+    <span class="line"></span>
+    <h1>高級兩人帳 兩小床</h1>
+    <h2>Twin Tent</h2>
+    <h4>全村帳數：2帳<br>
+      入住人數：2人    &nbsp;&nbsp;  *恕無法提供加床、加人服務，限住兩人<br>
+      設施與備品：冷暖空調、夜燈、充電插座
+      <a href="#" class="more" onclick="document.getElementById('more').style.display='block'">&nbsp;more...</a>
+    </h4>
+    <table>
+      <tr bgcolor="#DDC4B9">
+        <td>平日</td>
+        <td>假日</td>
+        <td>特殊假日</td>
+      </tr>
+      <tr>
+        <td>$ 5,300</td>
+        <td>$ 7,100</td>
+        <td>$ 7,100</td>
+      </tr>
+    </table>
+    <h5>
+      a.未滿3歲嬰幼兒均不收取費用。<br>
+      b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
+      &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
+      c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
+      &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
+      <br>
+      <br>
+      ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
+      ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
+      ．平日定義：非連續假期的週日～週四。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
+      ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+    </h5>
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
+    class="swiper-container mySwiper4">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/room/b_1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_5.jpg" />
+      </div>
+    </div>
+    <div class="swiper-button-next "></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div thumbsSlider="" class="swiper-container mySwiper3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/room/b_1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/room/b_5.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="DDT" class="tabcontent">
+  <span class="line"></span>
+  <h1>豪華四人帳 兩大床</h1>
+  <h2>DoubleDouble Tent</h2>
+  <h4>全村帳數：4帳<br>
+    入住人數：4人    &nbsp;&nbsp;  *每帳限加一床，至多五位入住<br>
+    設施與備品：冷暖空調、夜燈、充電插座
+    <a href="#" class="more" onclick="document.getElementById('more').style.display='block'">&nbsp;more...</a>
+  </h4>
+  <table>
+    <tr bgcolor="#DDC4B9">
+      <td>平日</td>
+      <td>假日</td>
+      <td>特殊假日</td>
+    </tr>
+    <tr>
+      <td>$ 8,200</td>
+      <td>$ 11,800</td>
+      <td>$ 11,800</td>
+    </tr>
+  </table>
+  <h5>
+    a.未滿3歲嬰幼兒均不收取費用。<br>
+    b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
+    &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
+    c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
+    &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
+    <br>
+    <br>
+    ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
+    ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
+    ．平日定義：非連續假期的週日～週四。<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
+    ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+  </h5>
+
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
+  class="swiper-container mySwiper6">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/room/c_1.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_5.jpg" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<div thumbsSlider="" class="swiper-container mySwiper5">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/room/c_1.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/c_5.jpg" />
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="QT" class="tabcontent">
+  <span class="line"></span>
+  <h1>高級四人帳 四小床</h1>
+  <h2>Quad Tent</h2>
+  <h4>全村帳數：2帳<br>
+    入住人數：4人    &nbsp;&nbsp;  *恕無法提供加床、加人服務，限住四人<br>
+    設施與備品：冷暖空調、夜燈、充電插座
+    <a href="#" class="more" onclick="document.getElementById('more').style.display='block'">&nbsp;more...</a>
+  </h4>
+  <table>
+    <tr bgcolor="#DDC4B9">
+      <td>平日</td>
+      <td>假日</td>
+      <td>特殊假日</td>
+    </tr>
+    <tr>
+      <td>$ 8,200</td>
+      <td>$ 11,800</td>
+      <td>$ 11,800</td>
+    </tr>
+  </table>
+  <h5>
+    a.未滿3歲嬰幼兒均不收取費用。<br>
+    b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
+    &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
+    c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
+    &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
+    <br>
+    <br>
+    ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
+    ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
+    ．平日定義：非連續假期的週日～週四。<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
+    ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+  </h5>
+
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
+  class="swiper-container mySwiper8">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/room/d_1.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_5.jpg" />
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<div thumbsSlider="" class="swiper-container mySwiper7">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/room/d_1.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_2.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_3.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_4.jpg" />
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/room/d_4.jpg" />
+    </div>
+  </div>
+</div>
+</div>
+
+</main>
+
+
+
+<!-- openwindow -->
+<div id="more" class="window">
+  <div class="window-content" action="#">
+    <span onclick="document.getElementById('more').style.display='none'" class="close" title="Close Modal">×</span>
+
+    <div class="container">
+      <h1>公共區設施與備品：</h1>
+      <h4>．停車場<br>
+        ．用餐區備有飲用冷熱水<br>
+        ．櫃台備有防蚊液<br>
+      </h4>
+      <h1>帳篷設施與備品：</h1>
+      <h4>．冷暖空調風扇<br>
+        ．夜燈<br>
+        ．充電插座<br>
+        ．彈簧床墊<br>
+        ．高級寢具<br>
+        ．乾濕分離五星級衛浴：<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24小時熱水供應，附沐浴乳、洗髮精、吹風機、嬰兒澡盆<br>
+        <br>
+        &nbsp;&nbsp;*請自行攜帶：牙刷、牙膏、浴巾、拖鞋、雨具、保暖衣物
+      </h4>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="footer">
+    <div class="social_list">
+      <a href="https://www.facebook.com/">
+        <img src="./images/icon/Facebook.svg" alt="" class="fb" >
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="./images/icon/Instagram.svg" alt="" class="ig">
+      </a>
+      <a href="https://www.cwb.gov.tw/V8/C/W/Town/Town.html?TID=1000203" class="weather">查看及時天氣預報</a>
+    </div>
+    <h5>宜蘭縣蘇澳鎮武荖坑路75號</h5>
+    <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+      <br>參考資源：Pinterest ｜ CMPVillage。若有侵權疑慮，您可私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師
+        養成班</a>，後續會由專人協助處理。
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!--  tablink  -->
+  <script>
+  function openRoom(evt, roomName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      // tabcontent[i].style.display = "none";
+      tabcontent[i].style.position = "absolute";
+      tabcontent[i].style.opacity = "0";
+      tabcontent[i].style.pointerEvents = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(roomName).style.position = "relative";
+    document.getElementById(roomName).style.opacity = "1";
+    document.getElementById(roomName).style.pointerEvents = "auto";
+
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 5,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: ".mySwiper2 .swiper-button-next",
+    prevEl: ".mySwiper2 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+
+var swiper3 = new Swiper(".mySwiper3", {
+  loop: true,
+  spaceBetween: 5,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var swiper4 = new Swiper(".mySwiper4", {
+  loop: true,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: ".mySwiper4 .swiper-button-next",
+    prevEl: ".mySwiper4 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper3,
+  },
+});
+
+
+var swiper5 = new Swiper(".mySwiper5", {
+  loop: true,
+  spaceBetween: 5,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var swiper6 = new Swiper(".mySwiper6", {
+  loop: true,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: ".mySwiper6 .swiper-button-next",
+    prevEl: ".mySwiper6 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper5,
+  },
+});
+
+
+var swiper7 = new Swiper(".mySwiper7", {
+  loop: true,
+  spaceBetween: 5,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var swiper8 = new Swiper(".mySwiper8", {
+  loop: true,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: ".mySwiper8 .swiper-button-next",
+    prevEl: ".mySwiper8 .swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper7,
+  },
+});
+
+</script>
+
+
+
+
+<!-- openwindow -->
+<script>
+var window = document.getElementById('more');
+
+window.onclick = function(event) {
+  if (event.target == window) {
+    window.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+<script src="./vendors/aos/js/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import "./common/header.css";
+@import "./common/side_parent_bt.css";
+@import "./common/footer.css";
+
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  font-family: "Roboto","Noto Sans TC";
+}
+
+main{
+  /* border: 1px solid red; */
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.location{
+  /* border: 1px solid red; */
+  width:1000px;
+}
+
+.block1{
+  /* border: 1px solid blue; */
+  width: 1000px;
+  height: 600px;
+  background-image: url("../images/map/mapline.svg") , url("../images/map/map0.svg");
+  background-size: cover;
+  position: relative;
+}
+
+.line_content{
+  /* border: 1px solid yellow; */
+  display: inline-flex;
+  margin: 10px 0 20px 0;
+}
+
+.line{
+  background-color: #DDC4B9;
+  width: 4px;
+  height: 70px;
+  margin: 0 10px 0 0;
+}
+
+.content{
+  /* border: 1px solid blue; */
+  align-self: center;
+}
+
+.content > h2{
+  font-size: 20px;
+  font-weight:500;
+  color:#875855;
+  margin:0 0 3px 0 ;
+}
+
+.content > h3{
+  font-size: 14px;
+  font-weight:500;
+  color:#875855;
+  margin: 0 0 3px 0;
+}
+
+h4{
+  font-size: 16px;
+  font-weight:500;
+  line-height:24px;
+  color:#6B6B6B;
+  margin: 0;
+  position: absolute;
+}
+
+.map1{
+  right:40px;
+  top:40px;
+}
+
+.map2{
+  right:40px;
+  bottom:130px;
+  text-align: right;
+}
+
+.map3{
+  left:40px;
+  bottom:100px;
+}
+
+.map4{
+  left:40px;
+  bottom:200px;
+}
+
+.block2{
+  /* border: 1px solid blue; */
+  width: 1000px;
+  /* height: 630px; */
+}
+
+.map_content{
+  /* border: 1px solid yellow; */
+  width: 1000px;
+  /* height: 630px; */
+  display: flex;
+}
+
+.map{
+  border: 1px ;
+  border-style: hidden;
+  border-radius: 10px;
+  width: 480px;
+  height:450px;
+  margin:0 30px 0 10px;
+}
+
+.contentner{
+  /* border: 1px solid blue; */
+  width: calc(100% - 480px - 40px);
+  height:450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.way{
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.way3{
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 0 0 0 0;
+}
+
+.num{
+  /* border: 1px solid yellow; */
+  font-size: 40px;
+  font-weight:500;
+  color:#C89D8C;
+  margin: 0 10px 0 0;
+}
+
+.car > h2{
+  font-size: 20px;
+  font-weight:500;
+  line-height:18px;
+  color:#875855;
+  margin:20px 0 10px 0;
+}
+
+.car > h3{
+  font-size: 14px;
+  font-weight:500;
+  line-height:22px;
+  color:#6B6B6B;
+  margin: 0;
+}
