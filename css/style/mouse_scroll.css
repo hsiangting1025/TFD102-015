@@ -5,11 +5,17 @@
   height: 100px;
 
   position: absolute;
-  top: 440px;
+  top:105%;
   left: 50%;
-  transform: translateX(-50%);
+}
 
-  z-index: 13;
+
+.logo_guideline{
+  width: 2.5px;
+  height: 200px;
+  background-image: linear-gradient(to bottom, white 10%, white 30%, transparent 0%);
+  background-size: 100% 8px;
+  background-repeat: repeat-y;
 }
 
 .mouse_scroll p{
@@ -32,6 +38,10 @@
 
   width: 16px;
   height: 16px;
+
+  position: absolute;
+  top:55px;
+  left:-1px;
 }
 
 
@@ -45,7 +55,7 @@
 {
   animation-direction: alternate;
   animation-delay: alternate;
-
+  /* top:70px; */
   margin-top: 1px;
 }
 
@@ -54,7 +64,7 @@
   animation-delay: .2s;
   animation-direction: alternate;
 
-  margin-top: -6px;
+  margin-top: -12px;
 }
 
 
@@ -64,7 +74,11 @@
   border-radius: 14px;
   transform: none;
   border: 2px solid white;
-  top: 170px;
+  /* top: 170px; */
+
+  position: absolute;
+  top:210%;
+  left: -46%;
 }
 
 .wheel {

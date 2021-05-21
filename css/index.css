@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 *{
   box-sizing: border-box;
@@ -21,7 +19,7 @@ header{
   display: flex;
 }
 
-.logo{
+.logo_all{
   position: absolute;
   top: 1%;
   width: 16% ;
@@ -30,20 +28,6 @@ header{
   z-index: 10;
 }
 
-.logo_guideline{
-  position: absolute;
-  width: 3px;
-  height: 200px;
-
-  top: 21%;
-  left: 50%;
-
-  background-image: linear-gradient(to bottom, white 10%, white 30%, transparent 0%);
-  background-size: 100% 8px;
-  background-repeat: repeat-y;
-
-  z-index: 11;
-}
 
 
 
@@ -56,7 +40,7 @@ header{
   height:30px;
   display: inline-block;
   position: absolute;
-  left:1000px;
+  right: 15%;
   top:8%;
   cursor: pointer;
 
@@ -102,7 +86,7 @@ header{
   width:95px;
   position: absolute;
   right:-12px;
-  top:54px;
+  top:50px;
   text-align: right;
 
   display: none;
@@ -398,7 +382,7 @@ main{
   justify-content: center;
   position: absolute;
   margin: 0 auto;
-  /* top:1000px; */
+  /* top:1300px; */
   font-size:0;
 
   z-index: 11;

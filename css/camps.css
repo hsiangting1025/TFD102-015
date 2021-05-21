@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 @import "./common/header.css";
 @import "./common/side_parent_bt.css";
