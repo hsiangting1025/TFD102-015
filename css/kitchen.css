@@ -25,7 +25,7 @@ main{
 }
 
 .kitchen{
-  /* border: 1px solid red; */
+  /* border: 1px solid yellow; */
   width:1000px;
   /* display: flex; */
   /* justify-content: flex-start; */
@@ -34,7 +34,7 @@ main{
 .block1{
   /* border: 1px solid blue; */
   width: 1000px;
-  height: 430px;
+  /* height: 430px; */
   margin-bottom: 25px;
 }
 

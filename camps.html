@@ -2,9 +2,11 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/camps.css" rel="stylesheet">
+  <link href="./css/camps_rwd.css" rel="stylesheet">
   <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
@@ -38,6 +40,22 @@
           <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
         </li>
       </ul>
+
+      <!-- -------------hamburger_menu------------------  -->
+      <div class="hamburger_menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="menu_1" id="on">帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="menu_3" >美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="menu_5" >交通指南<p>Location</p></a>
+          <a href="./order.html" class="menu_6">預約入村<p>Order</p></a>
+          <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -51,6 +69,7 @@
 
 
   <main>
+    <div class="camps">
     <div class="tab">
       <button class="tablinks tab_1" onclick="openRoom(event, 'DT')" id="defaultOpen">
         <h3 class="bt1">兩人帳 一大床
@@ -76,6 +95,7 @@
 
 
     <div id="DT" class="tabcontent">
+      <div class="text">
       <span class="line"></span>
       <h1>豪華兩人帳 一大床</h1>
       <h2>Double Tent</h2>
@@ -97,23 +117,25 @@
         </tr>
       </table>
       <h5>
-        a.未滿3歲嬰幼兒均不收取費用。<br>
-        b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
-        &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
-        c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
-        &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
-        <br>
-        <br>
-        ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
-        ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
-        ．平日定義：非連續假期的週日～週四。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
-        ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
-      </h5>
+        <ul>
+          <li>未滿3歲嬰幼兒均不收取費用。</li>
+          <li>加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：</li>
+          <li class="inside">平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。</li>
+          <li>加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：</li>
+          <li class="inside">平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。</li>
+        </ul>
+        <ul>
+        <li>以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。</li>
+        <li>如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。</li>
+        <li>平日定義：非連續假期的週日～週四。</li>
+        <li>假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日至周四。</li>
+        <li>特殊假日定義：寒暑假期期間週五～週六、連續假日。</li>
+        <li>上述日期及價格如有異動，需依現場或官網公告為主。</li>
+        </ul>
+        </h5>
+    </div>
 
+    <div class="photo">
       <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
       class="swiper-container mySwiper2">
       <div class="swiper-wrapper">
@@ -156,10 +178,12 @@
         </div>
       </div>
     </div>
+    </div>
   </div>
 
 
   <div id="TT" class="tabcontent">
+    <div class="text">
     <span class="line"></span>
     <h1>高級兩人帳 兩小床</h1>
     <h2>Twin Tent</h2>
@@ -181,23 +205,25 @@
       </tr>
     </table>
     <h5>
-      a.未滿3歲嬰幼兒均不收取費用。<br>
-      b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
-      &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
-      c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
-      &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
-      <br>
-      <br>
-      ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
-      ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
-      ．平日定義：非連續假期的週日～週四。<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
-      ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+      <ul>
+        <li>未滿3歲嬰幼兒均不收取費用。</li>
+        <li>加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：</li>
+        <li class="inside">平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。</li>
+        <li>加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：</li>
+        <li class="inside">平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。</li>
+      </ul>
+      <ul>
+      <li>以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。</li>
+      <li>如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。</li>
+      <li>平日定義：非連續假期的週日～週四。</li>
+      <li>假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日至周四。</li>
+      <li>特殊假日定義：寒暑假期期間週五～週六、連續假日。</li>
+      <li>上述日期及價格如有異動，需依現場或官網公告為主。</li>
+      </ul>
     </h5>
+  </div>
 
+  <div class="photo">
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
     class="swiper-container mySwiper4">
     <div class="swiper-wrapper">
@@ -241,9 +267,11 @@
     </div>
   </div>
 </div>
+</div>
 
 
 <div id="DDT" class="tabcontent">
+  <div class="text">
   <span class="line"></span>
   <h1>豪華四人帳 兩大床</h1>
   <h2>DoubleDouble Tent</h2>
@@ -265,23 +293,25 @@
     </tr>
   </table>
   <h5>
-    a.未滿3歲嬰幼兒均不收取費用。<br>
-    b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
-    &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
-    c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
-    &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
-    <br>
-    <br>
-    ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
-    ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
-    ．平日定義：非連續假期的週日～週四。<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
-    ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+    <ul>
+      <li>未滿3歲嬰幼兒均不收取費用。</li>
+      <li>加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：</li>
+      <li class="inside">平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。</li>
+      <li>加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：</li>
+      <li class="inside">平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。</li>
+    </ul>
+    <ul>
+    <li>以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。</li>
+    <li>如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。</li>
+    <li>平日定義：非連續假期的週日～週四。</li>
+    <li>假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日至周四。</li>
+    <li>特殊假日定義：寒暑假期期間週五～週六、連續假日。</li>
+    <li>上述日期及價格如有異動，需依現場或官網公告為主。</li>
+    </ul>
   </h5>
+  </div>
 
+  <div class="photo">
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
   class="swiper-container mySwiper6">
   <div class="swiper-wrapper">
@@ -325,8 +355,10 @@
   </div>
 </div>
 </div>
+</div>
 
 <div id="QT" class="tabcontent">
+  <div class="text">
   <span class="line"></span>
   <h1>高級四人帳 四小床</h1>
   <h2>Quad Tent</h2>
@@ -348,23 +380,25 @@
     </tr>
   </table>
   <h5>
-    a.未滿3歲嬰幼兒均不收取費用。<br>
-    b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：<br>
-    &nbsp;&nbsp;&nbsp;平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
-    c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：<br>
-    &nbsp;&nbsp;&nbsp;平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。
-    <br>
-    <br>
-    ．以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。<br>
-    ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;的訂位，並收取相關費用。<br>
-    ．平日定義：非連續假期的週日～週四。<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;至周四。<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;特殊假日定義：寒暑假期期間週五～週六、連續假日。<br>
-    ．上述日期及價格如有異動，需依現場或官網公告為主。<br>
+    <ul>
+      <li>未滿3歲嬰幼兒均不收取費用。</li>
+      <li>加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：</li>
+      <li class="inside">平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。</li>
+      <li>加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：</li>
+      <li class="inside">平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。</li>
+    </ul>
+    <ul>
+    <li>以上的費用皆已含10%服務費及早餐、下午茶點、晚餐、村內活動。</li>
+    <li>如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。</li>
+    <li>平日定義：非連續假期的週日～週四。</li>
+    <li>假日定義：非連續假期的周五及周六、連續假期的前後日、寒暑假期間的周日至周四。</li>
+    <li>特殊假日定義：寒暑假期期間週五～週六、連續假日。</li>
+    <li>上述日期及價格如有異動，需依現場或官網公告為主。</li>
+    </ul>
   </h5>
+  </div>
 
+  <div class="photo">
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; --swiper-navigation-size:25px;"
   class="swiper-container mySwiper8">
   <div class="swiper-wrapper">
@@ -408,7 +442,9 @@
   </div>
 </div>
 </div>
+</div>
 
+</div>
 </main>
 
 
@@ -465,14 +501,24 @@
 
 
 
+    <!-- hamburger_menu  -->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+
+
+
+
+
   <!--  tablink  -->
   <script>
   function openRoom(evt, roomName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      // tabcontent[i].style.display = "none";
-      tabcontent[i].style.position = "absolute";
+      tabcontent[i].style.position = "fixed";
       tabcontent[i].style.opacity = "0";
       tabcontent[i].style.pointerEvents = "none";
     }

@@ -71,11 +71,107 @@ footer{
   color:#ffffff;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
   text-shadow: black 0 1px 15px;
-  width:650px;
 }
 
 .footer > p > a{
   color:#ffffff;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px){
+  .social_list{
+    /* border:1px solid yellow; */
+    height: 30px;
+    margin: 0 auto;
+    margin:245px 0 0 0;
+    display: flex;
+  }
+  .footer > h5{
+    /* border:1px solid blue; */
+    font-size: 14px;
+    font-weight:400;
+    color:#ffffff;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    padding: 0;
+    text-shadow:  black 0 1px 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199px){
+  .social_list{
+    /* border:1px solid yellow; */
+    height: 30px;
+    margin: 0 auto;
+    margin:225px 0 0 0;
+    display: flex;
+  }
+  .footer > h5{
+    /* border:1px solid blue; */
+    font-size: 14px;
+    font-weight:400;
+    color:#ffffff;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    padding: 0;
+    text-shadow:  black 0 1px 15px;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .social_list{
+    height: 30px;
+    margin: 0 auto;
+    margin:210px 0 0 0;
+    display: flex;
+  }
+.fb{
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  filter: drop-shadow(0px 1px 3px rgba(0,0,0.3));
+}
+.ig{
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  filter: drop-shadow(0px 1px 3px rgba(0,0,0.3));
+}
+.weather{
+  border:1.8px solid #ffffff;
+  border-radius: 20px;
+  width: 130px;
+  height: 30px;
+  font-size: 13px;
+  font-weight:400;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 3px 10px 8px 10px;
+  margin: 0;
+  filter: drop-shadow(0px 1px 3px rgba(0,0,0.3));
+}
+  .footer > h5{
+    font-size: 14px;
+    font-weight:400;
+    color:#ffffff;
+    text-align: center;
+    margin: 10px 0 15px 0;
+    padding: 0;
+    text-shadow:  black 0 1px 15px;
+  }
+  .footer > p{
+    font-size: 8px;
+    font-weight:300;
+    color:#ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-shadow: black 0 1px 15px;
+  }
 }

@@ -1,0 +1,188 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    main{
+        width: 100%;
+    }
+    .activities_l{
+        width:880px;
+    }
+    .activities_r{
+        width:880px;
+    }
+    .guideline_l{
+        display: inline-flex;
+        height: 100px;
+        width: 880px;
+        align-self: center;
+        margin:10px 30px 10px 0;
+    }
+    .guideline_r{
+        display: inline-flex;
+        height: 100px;
+        width: 880px;
+        align-self: center;
+        margin:10px 0 10px 30px;
+    }
+    .guideline_l > img, .guideline_r > img{
+        width: 100%;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .activities_l{
+        width:768px;
+    }
+    .activities_r{
+        width:768px;
+    }
+    .activities_r > img{
+        margin: 0 15px 0 0;
+    }
+    .act_content_l{
+        align-self: center;
+        margin: 0 20px;
+    }
+    .act_content_r{
+        align-self: center;
+        margin: 0 30px 0 20px;
+    }
+    .guideline_l{
+        display: inline-flex;
+        height: 100px;
+        width: 680px;
+        align-self: center;
+        margin:10px 0 10px 0;
+    }
+    .guideline_r{
+        display: inline-flex;
+        height: 100px;
+        width: 680px;
+        align-self: center;
+        margin:10px 0 10px 0;
+    }
+    .guideline_l > img, .guideline_r > img{
+    width: 100%;
+    }
+    .activities_l > img{
+        margin: 0 0 0 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .activities_l{
+        width:100%;
+    }
+    .activities_r{
+        width:100%;
+    }
+    .activities_l > img{
+        margin: 0 0 0 15px;
+    }
+    .activities_r > img{
+        margin: 0 15px 0 0;
+    }
+    .act_content_l{
+        align-self: center;
+        margin: 0 20px;
+    }
+    .act_content_r{
+        align-self: center;
+        margin: 0 20px 0 15px;
+    }
+    .line{
+        background-color: #DDC4B9;
+        width: 4px;
+        height: 110px;
+        margin: 0 10px;
+        flex-shrink: 0;
+    }
+    .guideline_l{
+        display: inline-flex;
+        height: 100px;
+        width: 100%;
+        align-self: center;
+        margin:10px 0 10px 0;
+    }
+    .guideline_r{
+        display: inline-flex;
+        height: 100px;
+        width: 100%;
+        align-self: center;
+        margin:10px 0 10px 0;
+    }
+    .guideline_l > img, .guideline_r > img{
+    width: 100%;
+    }
+    button{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .activities_l{
+        width:100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .activities_l:last-child{
+        margin-bottom: 0;
+    }
+    .activities_r{
+        width:100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .activities_l > img , .activities_r > img{
+        margin-bottom: 5px;
+    }
+    .act_content_l,.act_content_r{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .act_content_l > h1 , .act_content_r > h1{
+        font-size: 24px;
+        margin: 5px 0 0 0;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 18px 0 18px;
+    }
+    .content > h2{
+        margin: 5px 0 10px 0;
+    }
+    .content > h3{
+        text-align: center;
+    }
+    .line{
+        display: none;
+    }
+    .guideline_l,.guideline_r{
+        display: none;
+    }
+    button{
+        margin: -10px 0 0 0;
+    }
+}
+
+
+

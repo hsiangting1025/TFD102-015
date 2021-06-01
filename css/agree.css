@@ -70,14 +70,14 @@ h3:hover{
 
 .content01 , .content02, .content03, .content04, .content05, .content06, .content07, .content08{
   /* border: 1px solid green; */
-  list-style:none;
+  list-style:disc;
   display:inline-flex;
   flex-direction: column;
   font-size: 14px;
   font-weight:500;
   line-height:24px;
   color:#6B6B6B;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 75px;
 }
 
 .line{

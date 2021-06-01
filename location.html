@@ -2,9 +2,11 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/location.css" rel="stylesheet">
+  <link href="./css/location_rwd.css" rel="stylesheet">
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
 <body>
@@ -37,6 +39,23 @@
           <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
         </li>
       </ul>
+
+      <!-- -------------hamburger_menu------------------  -->
+      <div class="hamburger_menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="menu_1">帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="menu_3">美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="menu_5" id="on">交通指南<p>Location</p></a>
+          <a href="./order.html" class="menu_6">預約入村<p>Order</p></a>
+          <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -80,8 +99,11 @@
               <div class="num" data-aos="zoom-in" data-aos-duration="2300" data-aos-offset="0" data-aos-once="true"> 01 </div>
               <div class="car" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="0" data-aos-once="true">
                 <h2>自行開車</h2>
-                <h3>．宜蘭縣蘇澳鎮武荖坑路75號<br>
-                  ．村內附免費停車場
+                <h3>
+                  <ul>
+                  <li>宜蘭縣蘇澳鎮武荖坑路75號</li>
+                  <li>村內附免費停車場</li>
+                </ul>
                 </h3>
               </div>
             </div>
@@ -89,12 +111,12 @@
               <div class="num" data-aos="zoom-in" data-aos-duration="2300" data-aos-once="true"> 02 </div>
               <div class="car" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                 <h2>搭乘火車</h2>
-                <h3>．【羅東火車站】下車 → 步行約1分鐘至市區客運【羅東轉運站】<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轉乘市區客運至【東城站】下車<br>
-                  ．【冬山火車站】下車 → 步行約8分鐘至市區客運【冬山國中站】<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轉乘市區客運至【東城站】下車<br>
-                  ．【蘇澳火車站】下車 → 步行約2分鐘至市區客運【蘇澳站】<br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轉乘市區客運至【東城站】下車
+                <h3>
+                  <ul>
+                  <li>羅東火車站 下車 → 步行約1分鐘至市區客運 羅東轉運站 轉乘市區客運至 東城站 下車</li>
+                  <li>冬山火車站 下車 → 步行約8分鐘至市區客運 冬山國中站 轉乘市區客運至 東城站 下車</li>
+                  <li>蘇澳火車站 下車 → 步行約2分鐘至市區客運 蘇澳站 轉乘市區客運至 東城站 下車</li>
+                </ul>
                 </h3>
               </div>
             </div>
@@ -102,10 +124,13 @@
               <div class="num" data-aos="zoom-in" data-aos-duration="2300" data-aos-once="true"> 03 </div>
               <div class="car" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                 <h2>搭乘國道客運</h2>
-                <h3>．【首都1570線】市府轉運站發車→【東城站】下車<br>
-                  ．【國光1879線】圓山轉運站發車→【東城站】下車<br>
-                  ．【葛瑪蘭1917線】板橋發車→【東城站】下車<br>
-                  ．【大都會9028線】新店大坪林發車→【東城站】下車
+                <h3>
+                  <ul>
+                  <li>首都1570線 市府轉運站發車 → 東城站 下車</li>
+                  <li>國光1879線 圓山轉運站發車 → 東城站 下車</li>
+                  <li>葛瑪蘭1917線 板橋發車 → 東城站 下車</li>
+                  <li>大都會9028線 新店大坪林發車 → 東城站 下車</li>
+                </ul>
                 </h3>
               </div>
             </div>
@@ -134,6 +159,19 @@
         </p>
       </div>
     </footer>
+
+
+
+
+
+
+    <!-- hamburger_menu  -->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+
 
 
 

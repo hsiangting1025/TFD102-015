@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
-  <link href="./css/index.css" rel="stylesheet">
   <link href="./css/style/mouse_scroll.css" rel="stylesheet">
   <link href="./vendors/slick/css/slick.css" rel="stylesheet">
   <link href="./vendors/slick/css/slick-theme.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/index_rwd.css" rel="stylesheet">
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
+
 <body>
   <header>
     <div class="logo_all">
@@ -42,6 +46,7 @@
     </div>
 
 
+
     <img src="./images/parallax/parallax_1.jpg" class="parallax_1 translate" data-speed="0.9" alt="">
     <img src="./images/parallax/parallax_2.png" class="parallax_2 translate" data-speed="0.6" alt="">
     <img src="./images/parallax/parallax_3.png" class="parallax_3 translate" data-speed="0.3" alt="">
@@ -53,14 +58,45 @@
 
 
 
-  <div class="side_parent_bt"  data-aos="fade-left" data-aos-offset="-20" data-aos-anchor-placement="top-bottom" data-aos-anchor="#anchor1">
+  <div class="side_parent_bt" data-aos="fade-left" data-aos-duration="700" data-aos-offset="-200" data-aos-anchor-placement="top-bottom"
+    data-aos-anchor="#anchor1">
     <a href="./order.html" class="side_bt1">
-      <h3 class="s_bt1">預約入村<p>Order</p></h3>
+      <h3 class="s_bt1">預約入村<p>Order</p>
+      </h3>
     </a>
     <a href="./search.html" class="side_bt2">
-      <h3 class="s_bt2">訂單查詢<p>Search</p></h3>
+      <h3 class="s_bt2">訂單查詢<p>Search</p>
+      </h3>
     </a>
   </div>
+
+
+
+
+
+  <!-- -------------  rwd - hamburger_menu------------------  -->
+  <div class="rwd_nav">
+    <div class="nav">
+      <a href="./index.html">
+        <img src="./images/logo_2.svg" alt="" class="logo">
+      </a>
+      <div class="rwd_hamburger_menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="rwd_menu_1" >帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="rwd_menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="rwd_menu_3" >美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="rwd_menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="rwd_menu_5">交通指南<p>Location</p></a>
+          <a href="./order.html" class="rwd_menu_6">預約入村<p>Order</p></a>
+          <a href="./search.html" class="rwd_menu_7">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -69,7 +105,7 @@
 
       <h1 id="anchor1">免裝備豪華露營</h1>
       <h2>某村重現土地的美好，與森林一同呼吸，拉近人與人的關係
-        <br>讓我們入村一同享受以自然為家的生活，感受變慢的戶外時光
+        <br>讓我們入村享受以自然為家的生活，感受變慢的戶外時光
       </h2>
 
 
@@ -116,19 +152,27 @@
 
 
       <div class="content">
-        <div class="guideline"></div>
-        <h1>SOME VILLAGE</h1>
-        <h2>Mission Possible</h2>
-        <h4>在某村白天常可見到台灣獼猴、藍鵲…等野生動物<br>
-          夜間可仰望星空聽見啄木鳥與青蛙的鳴叫聲<br>
-          隨著自然的天候變化，晴時青山綠水，雨時雲霧繚繞<br>
-          入村吧 一同感受大自然所帶來如幻境的演出
-        </h4>
-        <div class="img_block1" >
+        <div class="img_block1">
           <img src="./images/index/index_img2_1.jpg" alt="">
         </div>
-        <div class="img_block2">
-          <img src="./images/index/index_img3_1.jpg" alt="">
+        <div class="text_img">
+          <div class="text">
+            <div class="main_text">
+              <div class="guideline"></div>
+              <div class="text_title">
+                <h1>SOME VILLAGE</h1>
+                <h2>Mission Possible</h2>
+              </div>
+            </div>
+            <h4>在某村白天常可見到台灣獼猴、藍鵲…等野生動物<br>
+              夜間可仰望星空聽見啄木鳥與青蛙的鳴叫聲<br>
+              隨著自然的天候變化，晴時青山綠水，雨時雲霧繚繞<br>
+              入村吧 一同感受大自然所帶來如幻境的演出
+            </h4>
+          </div>
+          <div class="img_block2">
+            <img src="./images/index/index_img3_1.jpg" alt="">
+          </div>
         </div>
       </div>
 
@@ -170,7 +214,7 @@
         <div class="footer">
           <div class="social_list">
             <a href="https://www.facebook.com/">
-              <img src="./images/icon/Facebook.svg" alt="" class="fb" >
+              <img src="./images/icon/Facebook.svg" alt="" class="fb">
             </a>
             <a href="https://www.instagram.com/">
               <img src="./images/icon/Instagram.svg" alt="" class="ig">
@@ -181,14 +225,12 @@
           <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
             <br>參考資源：Pinterest ｜ CMPVillage。若有侵權疑慮，您可私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師
               養成班</a>，後續會由專人協助處理。
-            </p>
-          </div>
-        </footer>
+          </p>
+        </div>
+      </footer>
 
-      </div>
-    </main>
-
-
+    </div>
+  </main>
 
 
 
@@ -200,25 +242,27 @@
 
 
 
-    <script src="./js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./vendors/slick/js/slick.js"></script>
-    <script src="./vendors/aos/js/aos.js"></script>
-    <script>
+
+
+  <script src="./js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./vendors/slick/js/slick.js"></script>
+  <script src="./vendors/aos/js/aos.js"></script>
+  <script>
     AOS.init();
-    </script>
+  </script>
 
 
-    <!-- hamburger_menu  -->
-    <script>
+  <!-- hamburger_menu  -->
+  <script>
     function myFunction(x) {
       x.classList.toggle("change");
     }
-    </script>
+  </script>
 
 
-    <!-- carousel -->
-    <script>
+  <!-- carousel -->
+  <script>
     $('.instagram').slick({
       // lazyLoad: 'ondemand',
       slidesToShow: 4,
@@ -227,23 +271,31 @@
       speed: 300,
       dots: false,
       arrows: true,
-      // responsive: [
-      //   {
-      //     breakpoint:767, // RWD在767寬度時切換顯示數量
-      //     settings: {
-      //       slidesToShow: 2, //一次顯示2個
-      //       slidesToScroll: 1,//切換下一頁時移動1個
-      //     }
-      //   }
-      //   ,{
-      //     breakpoint: 575,// RWD在575寬度時切換顯示數量
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //     }
-      //   },]
+      responsive: [
+        {
+          breakpoint:767, // RWD在767寬度時切換顯示數量
+          settings: {
+            slidesToShow: 3, //一次顯示2個
+            slidesToScroll: 1,//切換下一頁時移動1個
+          }
+        }
+        ,{
+          breakpoint: 575,// RWD在575寬度時切換顯示數量
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        }
+        ,{
+          breakpoint: 400,// RWD在400寬度時切換顯示數量
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }]
     });
-    </script>
+  </script>
 
-  </body>
-  </html>
+</body>
+
+</html>

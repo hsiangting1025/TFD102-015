@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/order.css" rel="stylesheet">
@@ -176,21 +177,21 @@
           <h1>04</h1>
         </div>
         <form class="content" action="#" method="post">
-          <h2 >請填寫入住者資料：</h2>
+          <h2 id="anchor1">請填寫入住者資料：</h2>
           <label for="checkin" class="title2">姓名：</label>
           <input type="text" id="name" name="name" class="name" placeholder="李知恩" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="5">
           <br>
-          <label for="tel" class="title2" id="anchor1" >手機：</label>
+          <label for="tel" class="title2"  >手機：</label>
           <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
           <br>
           <label for="tel" class="title2">mail：</label>
           <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" >
           <br>
-          <label class="title3">備註：</label>
+          <label class="title3" >備註：</label>
           <textarea rows="5" cols="16" name="notes" class="notes" placeholder="需求需視狀況安排" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'"></textarea>
         </form>
 
-        <div class="price_total" data-aos="fade-left" data-aos-duration="300" data-aos-anchor="#anchor1">
+        <div class="price_total" data-aos="fade-left" data-aos-duration="100" data-aos-anchor="#anchor1" data-aos-offset="300" data-aos-anchor-placement="top-bottom">
           <div class="price_title">
             <div class="title_line" ></div>
             <h1>訂單內容</h1>
@@ -219,7 +220,7 @@
       </div>
       <div class="block5">
         <div class="circle"></div>
-        <h2>預約入村前請先詳閱 <<村民守則>></h2>
+        <h2>預約入村前請先詳閱 << 村民守則 >> </h2>
         <button type="submit" class="more" onclick="document.getElementById('more').style.display='block'"><h4>下一步<p>Next</p></h4></button>
       </div>
 
@@ -359,7 +360,7 @@
         document.getElementById(roomName).style.position = "relative";
         document.getElementById(roomName).style.opacity = "1";
         document.getElementById(roomName).style.pointerEvents = "auto";
-
+        
 
         evt.currentTarget.className += " active";
       }
@@ -370,7 +371,7 @@
 
 
       <!-- click change img -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
       $(document).ready(function(){
         $(".tent2_1").click(function(){
@@ -380,6 +381,26 @@
           $(".tent4_1").attr("src","./images/order/map_order_4_1_c.svg");
         });
       });
+      </script> -->
+
+      <script>
+        var tent2_1 = document.getElementsByClassName("tent2_1")[0];
+        tent2_1.addEventListener("click",function(){
+          if(tent2_1.src.match("map_order_2_1_c")){
+            tent2_1.src = "./images/order/map_order_2_1.svg";
+          }else{
+            tent2_1.src = "./images/order/map_order_2_1_c.svg";
+          }
+        });
+
+        var tent4_1 = document.getElementsByClassName("tent4_1")[0];
+        tent4_1.addEventListener("click",function(){
+          if(tent4_1.src.match("map_order_4_1_c")){
+            tent4_1.src = "./images/order/map_order_4_1.svg";
+          }else{
+            tent4_1.src = "./images/order/map_order_4_1_c.svg";
+          }
+        });
       </script>
 
 
@@ -396,15 +417,7 @@
       }
       </script>
 
-      <script>
-      var window = document.getElementById('more');
 
-      window.onclick = function(event) {
-        if (event.target == window) {
-          window.style.display = "none";
-        }
-      }
-      </script>
 
 
 

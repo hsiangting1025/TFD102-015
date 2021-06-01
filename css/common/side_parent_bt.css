@@ -63,3 +63,14 @@ h3.s_bt1 > p {
 h3.s_bt1:hover ,  h3.s_bt1 > p:hover {
   color: #875855;
 }
+
+/* @media screen and (max-width: 768px){
+  div.side_parent_bt{
+    display: none;
+  }
+} */
+@media screen and (max-width: 830px){
+  div.side_parent_bt{
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    main{
+        width: 100%;
+    }
+    .agree{
+        width:100%;
+    }
+    #all{
+        width:880px;
+    }
+    .line{
+        width:880px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .agree{
+        width:100%;
+    }
+    #all{
+        width:100%;
+        padding: 0 60px;
+    }
+    .line{
+        width:100%;
+    }
+}
+
+
+
+@media screen and (max-width: 767px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .agree{
+        width:100%;
+    }
+    #all{
+        width:100%;
+        padding: 0 30px;
+    }
+    .line{
+        width:100%;
+    }
+
+
+}

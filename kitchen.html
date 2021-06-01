@@ -2,9 +2,11 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/kitchen.css" rel="stylesheet">
+  <link href="./css/kitchen_rwd.css" rel="stylesheet">
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
   <title></title>
 </head>
@@ -38,6 +40,22 @@
           <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
         </li>
       </ul>
+
+      <!-- -------------hamburger_menu------------------  -->
+      <div class="hamburger_menu" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="menu_1">帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="menu_3" id="on">美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="menu_5" >交通指南<p>Location</p></a>
+          <a href="./order.html" class="menu_6">預約入村<p>Order</p></a>
+          <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -133,6 +151,18 @@
         </p>
       </div>
     </footer>
+
+
+
+
+
+
+    <!-- hamburger_menu  -->
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
 
 
 
