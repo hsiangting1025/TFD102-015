@@ -18,17 +18,16 @@
   <link href="./vendors/slick/css/slick.css" rel="stylesheet">
   <link href="./vendors/slick/css/slick-theme.css" rel="stylesheet">
   <link href="./css/index.css" rel="stylesheet">
-  <!-- <link href="./css/index_rwd.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <link href="./css/index_rwd.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- 觸發點 -->
-  <div id="keypoint02"></div>
+  <div id="keypoint01"></div>
 
   <header>
     <div class="logo_all">
-      <img src="./images/logo_1.svg" class="logo translate" data-speed="0.7" alt="">
+      <img src="./images/logo_1.svg" class="logo logo01"  alt="">
 
       <div class="mouse_scroll">
         <div class="logo_guideline "></div>
@@ -58,19 +57,17 @@
 
 
 
-    <img src="./images/parallax/parallax_1_2.jpg" class="parallax_1 translate" data-speed="0.9" alt="">
-    <img src="./images/parallax/parallax_2_2.png" class="parallax_2 translate mo02" data-speed="0.6" alt="">
-    <img src="./images/parallax/parallax_3.png" class="parallax_3 translate mo03" data-speed="0.3" alt="">
-    <img src="./images/parallax/parallax_4.png" class="parallax_4 translate mo04" data-speed="0" alt="">
-    <img src="./images/parallax/parallax_5.png" class="parallax_5 translate mo05" data-speed="-0.3" alt="">
-    <img src="./images/parallax/parallax_6_2.png" class="parallax_6 translate mo06" data-speed="-0.7" alt="">
-    <img src="./images/parallax/parallax_7_2.png" class="parallax_7 translate mo07" data-speed="-0.9" alt="">
+    <img src="./images/parallax/parallax_1_2.jpg" class="parallax_1"  alt="">
+    <img src="./images/parallax/parallax_2_2.png" class="parallax_2 mo02"  alt="">
+    <img src="./images/parallax/parallax_3_2.png" class="parallax_3 mo03"  alt="">
+    <img src="./images/parallax/parallax_4.png" class="parallax_4 mo04"  alt="">
+    <img src="./images/parallax/parallax_5_2.png" class="parallax_5 mo05"  alt="">
+    <img src="./images/parallax/parallax_6_2.png" class="parallax_6 mo06"  alt="">
+    <img src="./images/parallax/parallax_7_2.png" class="parallax_7 mo07"  alt="">
   </header>
 
 
-
-  <div class="side_parent_bt" data-aos="fade-left" data-aos-duration="700" data-aos-offset="-200"
-    data-aos-anchor-placement="top-bottom" data-aos-anchor="#anchor1">
+  <div class="side_parent_bt">
     <a href="./order.html" class="side_bt1">
       <h3 class="s_bt1">預約入村<p>Order</p>
       </h3>
@@ -86,7 +83,7 @@
 
 
   <!-- -------------  rwd - hamburger_menu------------------  -->
-  <!-- <div class="rwd_nav">
+  <div class="rwd_nav">
     <div class="nav">
       <a href="./index.html">
         <img src="./images/logo_2.svg" alt="" class="logo">
@@ -106,21 +103,22 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
 
 
 
-  <main class=" translate" data-speed="-1.2">
+  <main class="all " >
     <div class="parent_container ">
 
-      <h1 id="anchor1">免裝備豪華露營</h1>
-      <h2>某村重現土地的美好，與森林一同呼吸，拉近人與人的關係
+      <h1 class="st_t1">免裝備豪華露營</h1>
+      <h2 class="st_t2">某村重現土地的美好，與森林一同呼吸，拉近人與人的關係
         <br>讓我們入村享受以自然為家的生活，感受變慢的戶外時光
       </h2>
 
 
-
+      <!-- 觸發點 -->
+      <div id="keypoint02"></div>
       <div class="img_block">
         <img src="./images/index/index_img1.jpg" alt="圖">
       </div>
@@ -255,13 +253,8 @@
 
 
 
-  <!-- <script src="./js/index.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./vendors/slick/js/slick.js"></script>
-  <script src="./vendors/aos/js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 
 
@@ -276,40 +269,61 @@
       y: -40,
     }).to('.mo03', .5, {
       y: -100,
-      delay:-.5
+      delay: -.5
     }).to('.mo04', .5, {
       y: -170,
-      delay:-.5
+      delay: -.5
     }).to('.mo05', .5, {
       y: -220,
-      delay:-.5
-    }).to('.mo06', .5, {
+      delay: -.5
+    }).to('.mo06', .3, {
       y: -240,
-      delay:-.45
-    }).to('.mo07', .5, {
+      delay: -.45
+    }).to('.mo07', .3, {
       y: -250,
-      delay:-.4
-    }).to('.logo', .5, {
-      scale:.5,
-      opacity:0,
-      delay:-.4
+      delay: -.4
+    }).to('.logo01', .5, {
+      scale: .5,
+      opacity: 0,
+      delay: -.4
     }).to('.mouse_scroll', .3, {
       y: -130,
-      delay:-.6
+      delay: -.6
     }).to('.logo_guideline', .3, {
-      y:90,
+      y: 90,
       height: '100px',
-      delay:-.6
+      delay: -.6
     }).to('.mouse_scroll', .2, {
-      opacity:0,
-      delay:-.5
+      opacity: 0,
+      delay: -.5
+    }).from('.st_t1', .1, {
+      opacity: 0,
+      delay: -.3
+    }).from('.st_t2', .1, {
+      opacity: 0,
+      delay: -.3
+    }).to('.all', .1, {
+      y: -100,
+      delay: -.3
+    });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint01',
+      offset: 190, //場景觸發點位移
+      triggerHook: 0.2,  //瀏覽器觸發點 預設值0.5正中央
+    }).setTween(move_el).addTo(controller)
+
+    var side_parent_bt_el = TweenMax.from('.side_parent_bt', .7, {
+      x: 30,
+      ease: Elastic.easeOut
     });
 
     new ScrollMagic.Scene({
       triggerElement: '#keypoint02',
-      offset: 200, //場景觸發點位移
-      triggerHook: 0.2,  //瀏覽器觸發點 預設值0.5正中央
-    }).setTween(move_el).addIndicators().addTo(controller)
+      offset: 20, //場景觸發點位移
+      triggerHook: 0.3,  //瀏覽器觸發點 預設值0.5正中央
+    }).setTween(side_parent_bt_el).addTo(controller)
+
 
 
   </script>

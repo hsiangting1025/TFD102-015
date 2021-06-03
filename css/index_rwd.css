@@ -1,897 +1,540 @@
 
 /* -------------parallax------------------ */
-@media screen and (min-width: 1671px) {
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -115px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -60px;
-        width: 100%;
-        z-index: 9;
-    }
+@media screen and (min-width: 2001px){
     main{
-        position: absolute;
         top:1700px;
-        height: 1980px;
     }
 }
-
-@media (min-width: 1441px) and (max-width: 1670px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -115px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -60px;
-        width: 100%;
-        z-index: 9;
-    }
+@media (min-width: 1701px) and (max-width: 2000px){
     main{
-        position: absolute;
-        top:1460px;
-        height: 1980px;
+        top:1300px;
     }
 }
-
-@media (min-width: 1380px) and (max-width: 1440px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -115px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -60px;
-        width: 100%;
-        z-index: 9;
-    }
+@media (min-width: 1499px) and (max-width: 1700px){
     main{
-        /* position: absolute; */
-        /* top:1300px; */
-        height: 1980px;
-    }
-
-}
-
-@media (min-width: 1330px) and (max-width: 1379px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -110px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 9;
-    }
-    main{
-        position: absolute;
-        top:1170px;
-        height: 1980px;
-    }
-}
-
-@media (min-width: 1277px) and (max-width: 1329px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -110px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 9;
-    }
-    main{
-        position: absolute;
-        top:1130px;
-        height: 1980px;
-    }
-}
-
-@media (min-width: 1240px) and (max-width: 1276px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -365px;
-        width: 125%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -320px;
-        width: 125%;
-        z-index: 9;
-    }
-    main{
-        position: absolute;
         top:1100px;
-        height: 1980px;
     }
 }
-
-@media (min-width: 1180px) and (max-width: 1239px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
+@media (min-width: 1340px) and (max-width: 1379px){
+    main{
+        top:860px;
     }
+}
+@media (min-width: 1290px) and (max-width: 1339px){
     .parallax_2{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 4;
+        top: -80px;
     }
     .parallax_3{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 5;
+        top: -80px;
     }
     .parallax_4{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 6;
+        top: -80px;
     }
     .parallax_5{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 7;
+        top: -80px;
     }
     .parallax_6{
-        position: absolute;
-        top: -350px;
-        width: 125%;
-        z-index: 8;
+        top: -130px;
     }
     .parallax_7{
-        position: absolute;
-        top: -330px;
-        width: 125%;
-        z-index: 9;
+        top: -110px;
     }
     main{
-        position: absolute;
-        top:1040px;
-        height: 1980px;
+        top:830px;
     }
 }
-
-@media (min-width: 1140px) and (max-width: 1179px){
-
-    .parallax_1{
-        display: flex;
-        width: 110%;
-        z-index: 3;
-    }
+@media (min-width: 1240px) and (max-width: 1289px){
     .parallax_2{
-        position: absolute;
         top: -80px;
-        width: 100%;
-        z-index: 4;
     }
     .parallax_3{
-        position: absolute;
         top: -80px;
-        width: 100%;
-        z-index: 5;
     }
     .parallax_4{
-        position: absolute;
         top: -80px;
-        width: 100%;
-        z-index: 6;
     }
     .parallax_5{
-        position: absolute;
         top: -80px;
-        width: 100%;
-        z-index: 7;
     }
     .parallax_6{
-        position: absolute;
-        top: -190px;
-        width: 110%;
-        z-index: 8;
+        top: -130px;
     }
     .parallax_7{
-        position: absolute;
         top: -110px;
-        width: 110%;
-        z-index: 9;
     }
     main{
-        position: absolute;
-        top:1110px;
-        height: 1980px;
+        top:810px;
+    }
+    .logo_all{
+        top: 2.5%;
     }
 }
-
-@media (min-width: 1070px) and (max-width: 1139px){
-
-    .parallax_1{
-        display: flex;
-        width: 110%;
-        z-index: 3;
-    }
+@media (min-width: 1200px) and (max-width: 1239px){
     .parallax_2{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 4;
+        top: -70px;
     }
     .parallax_3{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 5;
+        top: -70px;
     }
     .parallax_4{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 6;
+        top: -70px;
     }
     .parallax_5{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 7;
+        top: -70px;
     }
     .parallax_6{
-        position: absolute;
-        top: -190px;
-        width: 110%;
-        z-index: 8;
+        top: -120px;
     }
     .parallax_7{
-        position: absolute;
-        top: -110px;
-        width: 110%;
-        z-index: 9;
-    }
-    main{
-        position: absolute;
-        top:1040px;
-        height: 1980px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1069px){
-
-    .parallax_1{
-        display: flex;
-        width: 110%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -190px;
-        width: 110%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -110px;
-        width: 110%;
-        z-index: 9;
-    }
-    main{
-        position: absolute;
-        top:950px;
-        height: 1980px;
-    }
-}
-
-@media (min-width: 911px) and (max-width: 991px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -70px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -70px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -70px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -70px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -110px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
         top: -100px;
-        width: 100%;
-        z-index: 9;
+    }
+    main{
+        top:790px;
+    }
+    .logo_all{
+        top: 2.8%;
     }
 }
-
-@media (min-width: 840px) and (max-width: 910px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
+@media (min-width: 1100px) and (max-width: 1199px){
     .parallax_2{
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: -90px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -80px;
-        width: 100%;
-        z-index: 9;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 839px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -30px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -30px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -30px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -30px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
         top: -70px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: -50px;
-        width: 100%;
-        z-index: 9;
-    }
-}
-
-@media (min-width: 711px) and (max-width: 767px){
-    .parallax_1{
-        display: flex;
-        width: 102%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 4;
     }
     .parallax_3{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 5;
+        top: -70px;
     }
     .parallax_4{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 6;
+        top: -70px;
     }
     .parallax_5{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 7;
+        top: -70px;
     }
     .parallax_6{
-        position: absolute;
-        top: -25px;
-        width: 100%;
-        z-index: 8;
+        top: -120px;
     }
     .parallax_7{
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        z-index: 9;
+        top: -100px;
+    }
+    main{
+        top:760px;
+    }
+    .logo_all{
+        top: 2.8%;
     }
 }
-
-@media (min-width: 631px) and (max-width: 710px){
-    .parallax_1{
-        display: flex;
-        width: 100%;
-        z-index: 3;
-    }
+@media (min-width: 1050px) and (max-width: 1099px){
     .parallax_2{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: -10px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
         top: -40px;
-        width: 100%;
-        z-index: 8;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -90px;
     }
     .parallax_7{
-        position: absolute;
+        top: -70px;
+    }
+    main{
+        top:720px;
+    }
+    .logo_all{
+        top: 3.5%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1049px){
+    .parallax_2{
         top: -20px;
-        width: 100%;
-        z-index: 9;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 630px){
-    .parallax_1{
-        display: flex;
-        width: 110%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: 10px;
-        width: 100%;
-        z-index: 4;
     }
     .parallax_3{
-        position: absolute;
-        top: 10px;
-        width: 100%;
-        z-index: 5;
+        top: -20px;
     }
     .parallax_4{
-        position: absolute;
-        top: 10px;
-        width: 100%;
-        z-index: 6;
+        top: -20px;
     }
     .parallax_5{
-        position: absolute;
-        top: 10px;
-        width: 100%;
-        z-index: 7;
+        top: -20px;
     }
     .parallax_6{
-        position: absolute;
+        top: -70px;
+    }
+    .parallax_7{
+        top: -50px;
+    }
+    main{
+        top:680px;
+    }
+    .logo_all{
+        top: 6%;
+    }
+}
+@media (min-width: 940px) and (max-width: 991px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -70px;
+    }
+    .parallax_7{
+        top: -50px;
+    }
+    main{
+        top:660px;
+    }
+}
+@media (min-width: 890px) and (max-width: 939px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -70px;
+    }
+    .parallax_7{
+        top: -50px;
+    }
+    main{
+        top:580px;
+    }
+}
+@media (min-width: 840px) and (max-width: 889px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:580px;
+    }
+    header{
+        top:20px;
+    }
+}
+@media (min-width: 800px) and (max-width: 839px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:560px;
+    }
+    header{
+        top:20px;
+    }
+}
+@media (min-width: 760px) and (max-width: 799px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:520px;
+    }
+    header{
+        top:20px;
+    }
+}
+@media (min-width: 700px) and (max-width: 759px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:480px;
+    }
+    header{
+        top:20px;
+    }
+}
+@media (min-width: 650px) and (max-width: 699px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:450px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 600px) and (max-width: 649px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:410px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 550px) and (max-width: 599px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:370px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 500px) and (max-width: 549px){
+    .parallax_2{
+        top: -50px;
+    }
+    .parallax_3{
+        top: -40px;
+    }
+    .parallax_4{
+        top: -40px;
+    }
+    .parallax_5{
+        top: -40px;
+    }
+    .parallax_6{
+        top: -50px;
+    }
+    .parallax_7{
+        top: -40px;
+    }
+    main{
+        top:330px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 450px) and (max-width: 499px){
+    .parallax_2{
+        top: -30px;
+    }
+    .parallax_3{
+        top: -30px;
+    }
+    .parallax_4{
+        top: -30px;
+    }
+    .parallax_5{
+        top: -30px;
+    }
+    .parallax_6{
+        top: -40px;
+    }
+    .parallax_7{
+        top: -30px;
+    }
+    main{
+        top:300px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 400px) and (max-width: 449px){
+    .parallax_2{
         top: 0px;
-        width: 100%;
-        z-index: 8;
+    }
+    .parallax_3{
+        top: 0px;
+    }
+    .parallax_4{
+        top: 0px;
+    }
+    .parallax_5{
+        top: 0px;
+    }
+    .parallax_6{
+        top: -10px;
     }
     .parallax_7{
-        position: absolute;
+        top: 0px;
+    }
+    main{
+        top:270px;
+    }
+    header{
+        top:40px;
+    }
+}
+@media (min-width: 350px) and (max-width: 399px){
+    .parallax_2{
+        top: 10px;
+    }
+    .parallax_3{
+        top: 10px;
+    }
+    .parallax_4{
+        top: 10px;
+    }
+    .parallax_5{
+        top: 10px;
+    }
+    .parallax_6{
+        top: 10px;
+    }
+    .parallax_7{
         top: 20px;
-        width: 100%;
-        z-index: 9;
+    }
+    main{
+        top:230px;
+    }
+    header{
+        top:40px;
     }
 }
-
-@media (min-width: 450px) and (max-width: 575px){
-    .parallax_1{
-        display: flex;
-        width: 115%;
-        z-index: 3;
-    }
+@media screen and (max-width: 349px){
     .parallax_2{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 4;
+        top: 30px;
     }
     .parallax_3{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 5;
+        top: 30px;
     }
     .parallax_4{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 6;
+        top: 30px;
     }
     .parallax_5{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 7;
+        top: 30px;
     }
     .parallax_6{
-        position: absolute;
+        top: 20px;
+    }
+    .parallax_7{
         top: 40px;
-        width: 100%;
-        z-index: 8;
     }
-    .parallax_7{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 9;
+    main{
+        top:120px;
     }
-}
-
-@media (min-width: 376px) and (max-width: 449px){
-    .parallax_1{
-        display: flex;
-        width: 120%;
-        z-index: 3;
+    header{
+        top:40px;
     }
-    .parallax_2{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: 40px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 9;
+    .parent_container > h1{
+        margin-top: 50px;
+        padding-top: 40px ;
     }
 }
-
-@media screen and (max-width: 375px){
-    .parallax_1{
-        display: flex;
-        width: 125%;
-        z-index: 3;
-    }
-    .parallax_2{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 4;
-    }
-    .parallax_3{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 5;
-    }
-    .parallax_4{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 6;
-    }
-    .parallax_5{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-        z-index: 7;
-    }
-    .parallax_6{
-        position: absolute;
-        top: 45px;
-        width: 100%;
-        z-index: 8;
-    }
-    .parallax_7{
-        position: absolute;
-        top: 60px;
-        width: 100%;
-        z-index: 9;
-    }
-
-}
-
-
 
 
 /* ------------- logo ------------------ */
@@ -900,82 +543,17 @@
     .logo_all .logo{
         display: none;
     }
-
-    .logo_guideline{
+    .mouse_scroll{
         display: none;
     }
 }
 
-@media (min-width: 960px) and (max-width: 991px){
-    .mouse {
-        height: 42px;
-        width: 24px;
-        border-radius: 14px;
-        transform: none;
-        border: 2px solid white;
-        /* top: 170px; */
-        position: absolute;
-        top:350%;
-        left: -46%;
-    }
-}
-
-@media (min-width: 890px) and (max-width: 959px){
-    .mouse {
-        height: 42px;
-        width: 24px;
-        border-radius: 14px;
-        transform: none;
-        border: 2px solid white;
-        /* top: 170px; */
-        position: absolute;
-        top:330%;
-        left: -46%;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 889px){
-    .mouse {
-        height: 42px;
-        width: 24px;
-        border-radius: 14px;
-        transform: none;
-        border: 2px solid white;
-        /* top: 170px; */
-        position: absolute;
-        top:320%;
-        left: -46%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 799px){
-    .mouse {
-        height: 42px;
-        width: 24px;
-        border-radius: 14px;
-        transform: none;
-        border: 2px solid white;
-        /* top: 170px; */
-        position: absolute;
-        top:295%;
-        left: -46%;
-    }
-}
-
-@media screen and (max-width: 767px){
-    .logo_guideline{
-        display: none;
-    }
-    .mouse{
-        display: none;
-    }
-}
 
 
 
 
 /* -------------hamburger_menu------------------ */
-@media screen and (min-width: 2020px){
+@media screen and (min-width: 2080px){
     .menu_6{
         color:#4F93B1;
         font-weight:500;
@@ -987,7 +565,7 @@
         text-shadow:  none;  
     }
 }
-@media screen and (min-width: 1820px){
+@media screen and (min-width: 1850px){
     .menu_5{
         color:#4F93B1;
         font-weight:500;
@@ -999,7 +577,7 @@
         text-shadow:  none;  
     }
 }
-@media screen and (min-width: 1560px){
+@media screen and (min-width: 1630px){
     .menu_4{
         color:#4F93B1;
         font-weight:500;
@@ -1011,7 +589,19 @@
         text-shadow:  none;  
     }
 }
-@media screen and (min-width: 1330px){
+@media screen and (min-width: 1440px){
+    .menu_3{
+        color:#4F93B1;
+        font-weight:500;
+        text-shadow:  none;
+    }
+    .menu_3 > p{
+        color:#4F93B1;
+        font-weight:500;
+        text-shadow:  none;  
+    }
+}
+@media screen and (max-width: 1440px){
     .menu_3{
         color:#4F93B1;
         font-weight:500;
@@ -1024,48 +614,8 @@
     }
 }
 
-@media (min-width: 1150px) and (max-width: 1179px){
-    .hamburger_menu {
-        right: 16%;
-        top:7.5%
-    }
-    .bar1{
-        background-color: #ffffff;
-    }
-    .bar2{
-        background-color: #ffffff;
-    }
-    .bar3{
-        background-color: #ffffff;
-    }
-}
-@media (min-width: 992px) and (max-width: 1149px){
-    .hamburger_menu {
-        right: 16%;
-        top:7%
-    }
-    .bar1{
-        background-color: #ffffff;
-    }
-    .bar2{
-        background-color: #ffffff;
-    }
-    .bar3{
-        background-color: #ffffff;
-    }
-}
 
-/* @media (min-width: 992px) and (max-width: 1080px){
-    .menu_2{
-        color:#ffffff;
-        text-shadow:  rgb(0, 0, 0) 0 1px 7px;
-    }
-    .menu_2 > p{
-        color:#ffffff;
-        text-shadow: black 0 1px 7px;
-    }
 
-} */
 
 
 

@@ -45,7 +45,7 @@ header{
   display: inline-block;
   position: absolute;
   right: 15%;
-  top:8%;
+  top:15%;
   cursor: pointer;
 
   z-index: 12;
@@ -382,16 +382,16 @@ h3.s_bt1:hover , h3.s_bt2:hover , h3.s_bt1 > p:hover , h3.s_bt2 > p:hover{
 /* -------------main------------------ */
 
 main{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width:100% ;
   /* height: 1430px; */
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   display: flex;
   justify-content: center;
   position: absolute;
   margin: 0 auto;
   padding: 10px 0;
-  top:950px;
+  top:900px;
   font-size:0;
 
 }
@@ -793,9 +793,6 @@ div.carousel{
 
 
 
-
-
-
 /* -------------footer------------------ */
 footer{
   /* border: 1px solid red; */
@@ -881,4 +878,8 @@ footer{
 .footer > p > a{
   color:#ffffff;
 }
+
+
+
+
 
