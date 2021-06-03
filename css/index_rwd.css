@@ -141,8 +141,8 @@
         z-index: 9;
     }
     main{
-        position: absolute;
-        top:1300px;
+        /* position: absolute; */
+        /* top:1300px; */
         height: 1980px;
     }
 
@@ -1079,6 +1079,11 @@
 
 
 /* -------------  rwd - hamburger_menu------------------ */
+@media screen and (min-width: 992px){
+    .rwd_nav{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 991px){
     

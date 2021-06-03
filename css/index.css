@@ -10,6 +10,8 @@ body{
   margin: 0 auto;
   font-family: "Roboto","Noto Sans TC";
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header{
@@ -17,13 +19,13 @@ header{
   width: 100%;
   /* height: 1080px; */
   position: relative;
-  overflow: hidden;
-  display: flex;
+  /* overflow: hidden; */
+  /* display: flex; */
 }
 
 .logo_all{
   position: absolute;
-  top: 1%;
+  top: 2%;
   width: 16% ;
   left:42%;
 
@@ -208,11 +210,12 @@ header{
 
 .parallax_1{
   display: flex;
-  /* position: absolute;
-  top: -80px; */
+  /* position: absolute; */
+  /* top: -80px; */
   width: 100%;
+  height: 100%;
   /* right: 0; */
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .parallax_2{
@@ -220,7 +223,8 @@ header{
   top: -110px;
   width: 100%;
   /* right: 0; */
-  z-index: 4;
+  /* z-index: 4; */
+  display: flex;
 }
 
 .parallax_3{
@@ -228,7 +232,8 @@ header{
   top: -110px;
   width: 100%;
   /* right: 0; */
-  z-index: 5;
+  /* z-index: 5; */
+  display: flex;
 }
 
 .parallax_4{
@@ -236,7 +241,8 @@ header{
   top: -110px;
   width: 100%;
   /* right: 0; */
-  z-index: 6;
+  /* z-index: 6; */
+  display: flex;
 }
 
 .parallax_5{
@@ -244,24 +250,27 @@ header{
   top: -110px;
   width: 100%;
   /* right: 0; */
-  z-index: 7;
+  /* z-index: 7; */
+  display: flex;
 }
 
 .parallax_6{
   position: absolute;
-  top: -150px;
+  top: -160px;
   width: 100%;
   /* right: 0; */
-  z-index: 8;
+  /* z-index: 8; */
+  display: flex;
 }
 
 .parallax_7{
-  /* border:1px solid green; */
+  /* border:1px solid red; */
   position: absolute;
   top: -140px;
   width: 100%;
   /* right: 0; */
-  z-index: 9;
+  /* z-index: 9; */
+  display: flex;
 }
 
 
@@ -373,7 +382,7 @@ h3.s_bt1:hover , h3.s_bt2:hover , h3.s_bt1 > p:hover , h3.s_bt2 > p:hover{
 /* -------------main------------------ */
 
 main{
-  /* border: 1px solid green; */
+  border: 1px solid green;
   width:100% ;
   /* height: 1430px; */
   background-color: #ffffff;
@@ -381,10 +390,10 @@ main{
   justify-content: center;
   position: absolute;
   margin: 0 auto;
-  /* top:1300px; */
+  padding: 10px 0;
+  top:950px;
   font-size:0;
 
-  z-index: 11;
 }
 
 .parent_container{

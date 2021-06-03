@@ -69,8 +69,9 @@ main{
   /* border: 1px solid blue; */
   font-size: 16px;
   font-weight:600;
+  line-height: 25px;
   color:#C89D8C;
-  padding: 3px 3px 0 0;
+  padding: 0px 3px 0 0;
 }
 
 .line{
@@ -80,7 +81,7 @@ main{
   height: 80px;
   background-image: linear-gradient(to bottom, white 40%, white 50%, transparent 0%);
   background-size: 100% 7px;
-  margin: 10px 0 0 20px;
+  margin: 0px 0 10px 20px;
 }
 
 .l02{
@@ -507,9 +508,11 @@ h3{
 .circle{
   width: 30px;
   height: 30px;
-  background-image: url("../images/order/circle.svg");
+  /* background-image: url("../images/order/circle.svg"); */
   background-size: cover;
   margin: 0 5px 0 8px;
+  background-color: #ddc4b9;
+  border-radius: 50%;
 }
 
 .block5 h2{
@@ -638,6 +641,39 @@ button h4:hover , button p:hover{
 
 .button_end{
   display: inline-flex;
+}
+
+.oo{
+margin: 10px 8px 0 0;
+}
+
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffffff;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1.5px solid #875855;
+  cursor: pointer;
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #cbd970;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 1.5px solid #ffffff;
 }
 
 .next{

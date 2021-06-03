@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/order.css" rel="stylesheet">
-  <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- scrollmagic -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <!-- 顯示觸發點指標 -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
 </head>
+
 <body>
   <header>
     <div class="nav">
@@ -42,46 +51,70 @@
 
   <main>
     <div class="order">
+      <!-- 觸發點 -->
+      <div id="keypoint01"></div>
       <div class="block1">
         <div class="line_num">
-          <span>STEP  <div class="line l01" ></div></span>
-          <h1>01</h1>
+          <div><span class="cl01">STEP </span>
+            <div class="line l01"></div>
+          </div>
+          <h1 class="cl01">01</h1>
         </div>
         <form class="content" action="#" method="post">
           <label for="checkin" class="title">請選擇入住日期：</label>
-          <input type="date" id="checkin" name="checkin" class="date"  style="font-size:14px;color:#6B6B6B;padding:10px 15px;font-family: 'Noto Sans TC'" >
+          <input type="date" id="checkin" name="checkin" class="date"
+            style="font-size:14px;color:#6B6B6B;padding:10px 15px;font-family: 'Noto Sans TC'">
           <label for="checkout" class="title">請選擇退房日期：</label>
-          <input type="date" id="checkout" name="checkout" class="date"  style="font-size:14px;color:#6B6B6B;padding:10px 10px;font-family: 'Noto Sans TC'" >
+          <input type="date" id="checkout" name="checkout" class="date"
+            style="font-size:14px;color:#6B6B6B;padding:10px 10px;font-family: 'Noto Sans TC'">
         </form>
       </div>
 
+      <!-- 觸發點 -->
+      <div id="keypoint02"></div>
       <div class="block2">
         <div class="line_num">
-          <span>STEP  <div class="line l02" ></div></span>
-          <h1>02</h1>
+          <div><span class="cl02">STEP </span>
+            <div class="line l02"></div>
+          </div>
+          <h1 class="cl02">02</h1>
         </div>
         <div class="content">
           <h2>請於地圖點選帳篷，若帳篷不可選擇代表已被預訂
             <div class="order_tent01">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83"><title>camp_order</title><path d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z"/></svg>
+              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                <title>camp_order</title>
+                <path
+                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+              </svg>
             </div> <span>您的選擇</span>
             <div class="order_tent02">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83"><title>camp_order</title><path d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z"/></svg>
+              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                <title>camp_order</title>
+                <path
+                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+              </svg>
             </div> <span>空帳 可選擇</span>
             <div class="order_tent03">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83"><title>camp_order</title><path d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z"/></svg>
-            </div> <span>滿帳 不可選擇  </span>
+              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                <title>camp_order</title>
+                <path
+                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+              </svg>
+            </div> <span>滿帳 不可選擇 </span>
           </h2>
 
           <div class="map">
-            <img src="./images/order/map_order_2_1.svg" class="tablinks tent2_1" onclick="openRoom(event, 'DT')" id="defaultOpen">
+            <img src="./images/order/map_order_2_1.svg" class="tablinks tent2_1" onclick="openRoom(event, 'DT')"
+              id="defaultOpen">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_2">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_3">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_4">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_5">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_6">
 
-            <img src="./images/order/map_order_4_1.svg" class="tablinks tent4_1" onclick="openRoom(event, 'QT')" id="defaultOpen">
+            <img src="./images/order/map_order_4_1.svg" class="tablinks tent4_1" onclick="openRoom(event, 'QT')"
+              id="defaultOpen">
             <img src="./images/order/map_order_4_2.svg" class="tablinks tent4_2">
             <img src="./images/order/map_order_4_2.svg" class="tablinks tent4_3">
             <img src="./images/order/map_order_4_2.svg" class="tablinks tent4_4">
@@ -129,39 +162,50 @@
 
         </div>
       </div>
+
+      <!-- 觸發點 -->
+      <div id="keypoint03"></div>
       <div class="block3">
         <div class="line_num">
-          <span>STEP  <div class="line l03" ></div></span>
-          <h1>03</h1>
+          <div><span class="cl03">STEP </span>
+            <div class="line l03"></div>
+          </div>
+          <h1 class="cl03">03</h1>
         </div>
         <form class="content" action="#" method="post">
           <h2>請選擇入住人數及加購人數：</h2>
-          <select name="num" class="adult" style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+          <select name="num" class="adult"
+            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
             <option value="1" selected>1 成人</option>
-            <option value="2" >2 成人</option>
+            <option value="2">2 成人</option>
             <option value="3">3 成人</option>
             <option value="4">4 成人</option>
           </select>
-          <select name="num" class="child" style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+          <select name="num" class="child"
+            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
             <option value="1" selected>0 孩童</option>
-            <option value="2" >1 孩童</option>
+            <option value="2">1 孩童</option>
             <option value="3">2 孩童</option>
             <option value="4">3 孩童</option>
           </select>
-          <select name="num" class="baby" style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+          <select name="num" class="baby"
+            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
             <option value="1" selected>0 嬰幼兒</option>
-            <option value="2" >1 嬰幼兒</option>
+            <option value="2">1 嬰幼兒</option>
             <option value="3">2 嬰幼兒</option>
             <option value="4">3 嬰幼兒</option>
           </select>
-          <span class="plus"></span><h3>加人：</h3>
-          <select name="num" class="adult_p" style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+          <span class="plus"></span>
+          <h3>加人：</h3>
+          <select name="num" class="adult_p"
+            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
             <option value="1" selected>0 成人</option>
-            <option value="2" >1 成人</option>
+            <option value="2">1 成人</option>
           </select>
-          <select name="num" class="child_p" style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+          <select name="num" class="child_p"
+            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
             <option value="1" selected>0 孩童</option>
-            <option value="2" >1 孩童</option>
+            <option value="2">1 孩童</option>
           </select>
           <p>
             a.未滿3歲嬰幼兒均不收取費用。<br>
@@ -171,35 +215,47 @@
           </p>
         </form>
       </div>
-      <div class="block4" >
+
+      <!-- 觸發點 -->
+      <div id="keypoint04"></div>
+      <div class="block4">
         <div class="line_num">
-          <span>STEP  <div class="line l04" ></div></span>
-          <h1>04</h1>
+          <div><span class="cl04">STEP </span>
+            <div class="line l04"></div>
+          </div>
+          <h1 class="cl04">04</h1>
         </div>
         <form class="content" action="#" method="post">
-          <h2 id="anchor1">請填寫入住者資料：</h2>
+          <h2>請填寫入住者資料：</h2>
           <label for="checkin" class="title2">姓名：</label>
-          <input type="text" id="name" name="name" class="name" placeholder="李知恩" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="5">
+          <input type="text" id="name" name="name" class="name" placeholder="李知恩"
+            style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="5">
           <br>
-          <label for="tel" class="title2"  >手機：</label>
-          <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
+          <label for="tel" class="title2">手機：</label>
+          <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx"
+            style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
           <br>
           <label for="tel" class="title2">mail：</label>
-          <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" >
+          <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com"
+            style="font-size:14px;padding:10px 15px;font-family: 'Roboto'">
           <br>
-          <label class="title3" >備註：</label>
-          <textarea rows="5" cols="16" name="notes" class="notes" placeholder="需求需視狀況安排" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'"></textarea>
+          <label class="title3">備註：</label>
+          <textarea rows="5" cols="16" name="notes" class="notes" placeholder="需求需視狀況安排"
+            style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'"></textarea>
         </form>
 
-        <div class="price_total" data-aos="fade-left" data-aos-duration="100" data-aos-anchor="#anchor1" data-aos-offset="300" data-aos-anchor-placement="top-bottom">
+        <!-- 觸發點 -->
+        <div id="keypoint08"></div>
+        <div class="price_total">
           <div class="price_title">
-            <div class="title_line" ></div>
+            <div class="title_line"></div>
             <h1>訂單內容</h1>
-            <div class="title_line" ></div>
+            <div class="title_line"></div>
           </div>
           <div class="price_content">
             <div class="price_date">
-              <h3>2021/12/30</h3><span> - </span><h3>2022/01/01</h3>
+              <h3>2021/12/30</h3><span> - </span>
+              <h3>2022/01/01</h3>
             </div>
             <div class="price_detail">
               <h3>豪華兩人帳 一大床 Double Tent</h3>
@@ -218,42 +274,62 @@
           </div>
         </div>
       </div>
+
+      <!-- 觸發點 -->
+      <div id="keypoint05"></div>
       <div class="block5">
-        <div class="circle"></div>
-        <h2>預約入村前請先詳閱 << 村民守則 >> </h2>
-        <button type="submit" class="more" onclick="document.getElementById('more').style.display='block'"><h4>下一步<p>Next</p></h4></button>
+        <div class="circle cir01"></div>
+        <h2>預約入村前請先詳閱 << 村民守則>> </h2>
+        <button type="submit" class="more" onclick="document.getElementById('more').style.display='block'">
+          <h4>下一步<p>Next</p>
+          </h4>
+        </button>
       </div>
 
-      <div class="payment"  id="payment">
-        <div class="block6" >
+      <div class="payment" id="payment">
+        <!-- 觸發點 -->
+        <div id="keypoint06"></div>
+        <div class="block6">
           <div class="total_line">
-            <div class="line l05" ></div>
+            <div class="line l05"></div>
             <div class="line_num">
-              <span>STEP  <div class="line l06" ></div></span>
-              <h1>05</h1>
+              <div><span class="cl06">STEP </span>
+                <div class="line l04"></div>
+              </div>
+              <h1 class="cl06">05</h1>
             </div>
           </div>
           <form class="content6" action="#" method="post">
             <h2>請輸入信用卡付款資訊</h2>
             <div class="payment_detail">
               <label for="p_card" class="title2">卡號：</label>
-              <input type="text" id="p_card" name="p_card" class="p_card" placeholder="xxxxxxxxxxxxxxxx" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="16">
+              <input type="text" id="p_card" name="p_card" class="p_card" placeholder="xxxxxxxxxxxxxxxx"
+                style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="16">
               <br>
               <label for="p_name" class="title2">持卡人姓名：</label>
-              <input type="text" id="p_name" name="p_name" class="p_name" placeholder="填寫信用卡上姓名" style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'" >
+              <input type="text" id="p_name" name="p_name" class="p_name" placeholder="填寫信用卡上姓名"
+                style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'">
               <br>
               <label for="p_date" class="title2">有效期：</label>
-              <input type="text" id="p_date" name="p_date" class="p_date" placeholder="xx/xx" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="4">
+              <input type="text" id="p_date" name="p_date" class="p_date" placeholder="xx/xx"
+                style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="4">
               <br>
               <label for="p_password" class="title2">CVC安全碼：</label>
-              <input type="text" id="p_password" name="p_password" class="p_password" placeholder="xxx" style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="3">
+              <input type="text" id="p_password" name="p_password" class="p_password" placeholder="xxx"
+                style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="3">
             </div>
           </form>
         </div>
+
+        <!-- 觸發點 -->
+        <div id="keypoint07"></div>
         <div class="block7">
-          <div class="circle"></div>
+          <div class="circle cir02"></div>
           <h2>我已確認訂單內容及付款金額</h2>
-          <button type="submit" class="order" onclick="document.getElementById('end').style.display='block'"><h4>預約入村<p>Order</p></h4></button>
+          <button type="submit" class="order" onclick="document.getElementById('end').style.display='block'">
+            <h4>預約入村<p>Order</p>
+            </h4>
+          </button>
         </div>
       </div>
 
@@ -274,66 +350,75 @@
         <h4>．入住時請出示附大頭照之有效證件如身分證、健保卡、護照或居留證。<br>
           ．如您實際入住人數(包含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂單<br>
           &nbsp;&nbsp;&nbsp;&nbsp;並依取消規定，收取相關費用。</h4>
-          <h3>取消預定</h3>
-          <h4>．預定日期十天前取消訂位，退還全數金額。<br>
-            ．預定日期七天起至十天前取消訂位，退還50%金額。<br>
-            ．預定日期二至六日前取消訂位，退還30%金額。<br>
-            ．預定日期當日至一日前取消，金額將不予退費。<br>
-            &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
+        <h3>取消預定</h3>
+        <h4>．預定日期十天前取消訂位，退還全數金額。<br>
+          ．預定日期七天起至十天前取消訂位，退還50%金額。<br>
+          ．預定日期二至六日前取消訂位，退還30%金額。<br>
+          ．預定日期當日至一日前取消，金額將不予退費。<br>
+          &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
+        </h4>
+        <h3>更改/延期日期</h3>
+        <h4>．預定日期十天前提出申請，可保留金額6個月。<br>
+          ．更改/延期異動完成後不得辦理取消退款。
+        </h4>
+        <h3>颱風/連續雨季</h3>
+        <h4>．若遇到不可抗力因素如颱風等天災（由中央氣象局已發布陸上警報為準）。<br>
+          ．最晚請於預定日期前一天申請取消預定，可退還全數金額或延期一次，否則不予退費。<br>
+          ．短暫陣雨及晴時多雲偶陣雨恕不受理退費或延期。<br>
+          ．遇連續多日雨季，可視現場營地情況，可申請取消或延期一次，延期可保留金額6個月。<br>
+          &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
+        </h4>
+        <span><input type="radio" class="oo">我已完整詳閱並同意村民守則</span>
+        <button onclick="myFunction();document.getElementById('more').style.display='none'" class="next">
+          <h4>前往付款<p>Payment</p>
           </h4>
-          <h3>更改/延期日期</h3>
-          <h4>．預定日期十天前提出申請，可保留金額6個月。<br>
-            ．更改/延期異動完成後不得辦理取消退款。
-          </h4>
-          <h3>颱風/連續雨季</h3>
-          <h4>．若遇到不可抗力因素如颱風等天災（由中央氣象局已發布陸上警報為準）。<br>
-            ．最晚請於預定日期前一天申請取消預定，可退還全數金額或延期一次，否則不予退費。<br>
-            ．短暫陣雨及晴時多雲偶陣雨恕不受理退費或延期。<br>
-            ．遇連續多日雨季，可視現場營地情況，可申請取消或延期一次，延期可保留金額6個月。<br>
-            &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
-          </h4>
-          <span>我已完整詳閱並同意村民守則</span>
-          <button onclick="myFunction();document.getElementById('more').style.display='none'" class="next" ><h4>前往付款<p>Payment</p></h4></button>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="end" class="window">
+    <div class="window-content" action="#">
+      <div class="container">
+        <h1>付款完成</h1>
+        <h4>請查收並保留mail或手機簡訊內的訂單編號</h4>
+        <div class="button_end">
+          <button class="next" onclick="location.href='./order.html'">
+            <h4>繼續預約<p>Order</p>
+            </h4>
+          </button>
+          <button class="home" onclick="location.href='./index.html'">
+            <h4>返回首頁<p>Home</p>
+            </h4>
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div id="end" class="window">
-      <div class="window-content" action="#">
-        <div class="container">
-          <h1>付款完成</h1>
-          <h4>請查收並保留mail或手機簡訊內的訂單編號</h4>
-          <div class="button_end">
-            <button  class="next" onclick="location.href='./order.html'"><h4>繼續預約<p>Order</p></h4></button>
-            <button  class="home" onclick="location.href='./index.html'"><h4>返回首頁<p>Home</p></h4></button>
-          </div>
-        </div>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="social_list">
+        <a href="https://www.facebook.com/">
+          <img src="./images/icon/Facebook.svg" alt="" class="fb">
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./images/icon/Instagram.svg" alt="" class="ig">
+        </a>
+        <a href="https://www.cwb.gov.tw/V8/C/W/Town/Town.html?TID=1000203" class="weather">查看及時天氣預報</a>
       </div>
+      <h5>宜蘭縣蘇澳鎮武荖坑路75號</h5>
+      <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+        <br>參考資源：Pinterest ｜ CMPVillage。若有侵權疑慮，您可私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師
+          養成班</a>，後續會由專人協助處理。
+      </p>
     </div>
-
-
-
-
-
-    <footer>
-      <div class="footer">
-        <div class="social_list">
-          <a href="https://www.facebook.com/">
-            <img src="./images/icon/Facebook.svg" alt="" class="fb" >
-          </a>
-          <a href="https://www.instagram.com/">
-            <img src="./images/icon/Instagram.svg" alt="" class="ig">
-          </a>
-          <a href="https://www.cwb.gov.tw/V8/C/W/Town/Town.html?TID=1000203" class="weather">查看及時天氣預報</a>
-        </div>
-        <h5>宜蘭縣蘇澳鎮武荖坑路75號</h5>
-        <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
-          <br>參考資源：Pinterest ｜ CMPVillage。若有侵權疑慮，您可私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師
-            養成班</a>，後續會由專人協助處理。
-          </p>
-        </div>
-      </footer>
+  </footer>
 
 
 
@@ -342,36 +427,36 @@
 
 
 
-      <!--  tablink  -->
-      <script>
-      function openRoom(evt, roomName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          // tabcontent[i].style.display = "none";
-          tabcontent[i].style.position = "absolute";
-          tabcontent[i].style.opacity = "0";
-          tabcontent[i].style.pointerEvents = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(roomName).style.position = "relative";
-        document.getElementById(roomName).style.opacity = "1";
-        document.getElementById(roomName).style.pointerEvents = "auto";
-        
-
-        evt.currentTarget.className += " active";
+  <!--  tablink  -->
+  <script>
+    function openRoom(evt, roomName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        // tabcontent[i].style.display = "none";
+        tabcontent[i].style.position = "absolute";
+        tabcontent[i].style.opacity = "0";
+        tabcontent[i].style.pointerEvents = "none";
       }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(roomName).style.position = "relative";
+      document.getElementById(roomName).style.opacity = "1";
+      document.getElementById(roomName).style.pointerEvents = "auto";
 
-      document.getElementById("defaultOpen").click();
-      </script>
+
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
 
 
 
-      <!-- click change img -->
-      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- click change img -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
       $(document).ready(function(){
         $(".tent2_1").click(function(){
@@ -383,65 +468,176 @@
       });
       </script> -->
 
-      <script>
-        var tent2_1 = document.getElementsByClassName("tent2_1")[0];
-        tent2_1.addEventListener("click",function(){
-          if(tent2_1.src.match("map_order_2_1_c")){
-            tent2_1.src = "./images/order/map_order_2_1.svg";
-          }else{
-            tent2_1.src = "./images/order/map_order_2_1_c.svg";
-          }
-        });
-
-        var tent4_1 = document.getElementsByClassName("tent4_1")[0];
-        tent4_1.addEventListener("click",function(){
-          if(tent4_1.src.match("map_order_4_1_c")){
-            tent4_1.src = "./images/order/map_order_4_1.svg";
-          }else{
-            tent4_1.src = "./images/order/map_order_4_1_c.svg";
-          }
-        });
-      </script>
-
-
-
-
-      <!-- openwindow -->
-      <script>
-      var window = document.getElementById('more');
-
-      window.onclick = function(event) {
-        if (event.target == window) {
-          window.style.display = "none";
-        }
+  <script>
+    var tent2_1 = document.getElementsByClassName("tent2_1")[0];
+    tent2_1.addEventListener("click", function () {
+      if (tent2_1.src.match("map_order_2_1_c")) {
+        tent2_1.src = "./images/order/map_order_2_1.svg";
+      } else {
+        tent2_1.src = "./images/order/map_order_2_1_c.svg";
       }
-      </script>
+    });
 
-
-
-
-
-
-
-      <!-- hidden -->
-      <script>
-      function myFunction() {
-        var x = document.getElementById("payment");
-        if (x.style.display === "flex") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "flex";
-        }
+    var tent4_1 = document.getElementsByClassName("tent4_1")[0];
+    tent4_1.addEventListener("click", function () {
+      if (tent4_1.src.match("map_order_4_1_c")) {
+        tent4_1.src = "./images/order/map_order_4_1.svg";
+      } else {
+        tent4_1.src = "./images/order/map_order_4_1_c.svg";
       }
-      </script>
+    });
+  </script>
 
 
 
-      <script src="./vendors/aos/js/aos.js"></script>
-      <script>
-      AOS.init();
-      </script>
+
+  <!-- openwindow -->
+  <script>
+    var window = document.getElementById('more');
+
+    window.onclick = function (event) {
+      if (event.target == window) {
+        window.style.display = "none";
+      }
+    }
+  </script>
 
 
-    </body>
-    </html>
+
+
+
+
+
+  <!-- hidden -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("payment");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- 滾動變色 -->
+  <script>
+    //場景初始化 init
+    var controller = new ScrollMagic.Controller();
+
+    var cl01_el = TweenMax.to('.cl01', .3, {
+      color: '#cbd970'
+    });
+
+    var cl02_el = TweenMax.to('.cl02', .3, {
+      color: '#cbd970'
+    });
+
+    var cl03_el = TweenMax.to('.cl03', .3, {
+      color: '#cbd970'
+    });
+
+    var cl04_el = TweenMax.to('.cl04', .3, {
+      color: '#cbd970'
+    });
+
+    var cir01_el =  new TimelineMax();
+    cir01_el.to('.cir01', .2, {
+      backgroundColor: '#cbd970',
+      opacity: .5
+    }).to('.cl04', .3, {
+      color: '#C89D8C',
+      delay:.5
+    });
+
+    var cl06_el = new TimelineMax();
+    cl06_el.to('.cl06', .3, {
+      color: '#cbd970'
+    }).to('.cir01', .2, {
+      backgroundColor: '#ddc4b9',
+      opacity: 1,
+      delay:.5
+    });
+
+    var cir02_el = new TimelineMax();
+    cir02_el.to('.cir02', .2, {
+      backgroundColor: '#cbd970',
+      opacity: .5
+    }).to('.cl06', .3, {
+      color: '#C89D8C',
+      delay:.5
+    });
+
+    var price_total_el = TweenMax.from('.price_total', 0.1, {
+      opacity: 0,
+    });
+
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint01',
+      offset: -150, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl01_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint02',
+      offset: -120, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 500 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl02_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint03',
+      offset: -400, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl03_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint04',
+      offset: -280, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl04_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint05',
+      offset: -450, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 100 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cir01_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint06',
+      offset: -600, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl06_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint07',
+      offset: -550, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cir02_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint08',
+      offset: -150, //場景觸發點位移
+      triggerHook: 0.3,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(price_total_el).addIndicators().addTo(controller)
+
+  </script>
+
+
+
+
+</body>
+
+</html>

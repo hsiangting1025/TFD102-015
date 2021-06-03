@@ -7,14 +7,25 @@
   <title>SOME VILLAGE</title>
 
   <link href="./css/style/mouse_scroll.css" rel="stylesheet">
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <!-- scrollmagic -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <!-- 顯示觸發點指標 -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
   <link href="./vendors/slick/css/slick.css" rel="stylesheet">
   <link href="./vendors/slick/css/slick-theme.css" rel="stylesheet">
   <link href="./css/index.css" rel="stylesheet">
-  <link href="./css/index_rwd.css" rel="stylesheet">
+  <!-- <link href="./css/index_rwd.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
 
 <body>
+  <!-- 觸發點 -->
+  <div id="keypoint02"></div>
+
   <header>
     <div class="logo_all">
       <img src="./images/logo_1.svg" class="logo translate" data-speed="0.7" alt="">
@@ -47,19 +58,19 @@
 
 
 
-    <img src="./images/parallax/parallax_1.jpg" class="parallax_1 translate" data-speed="0.9" alt="">
-    <img src="./images/parallax/parallax_2.png" class="parallax_2 translate" data-speed="0.6" alt="">
-    <img src="./images/parallax/parallax_3.png" class="parallax_3 translate" data-speed="0.3" alt="">
-    <img src="./images/parallax/parallax_4.png" class="parallax_4 translate" data-speed="0" alt="">
-    <img src="./images/parallax/parallax_5.png" class="parallax_5 translate" data-speed="-0.3" alt="">
-    <img src="./images/parallax/parallax_6.png" class="parallax_6 translate" data-speed="-0.7" alt="">
-    <img src="./images/parallax/parallax_7.png" class="parallax_7 translate" data-speed="-0.9" alt="">
+    <img src="./images/parallax/parallax_1_2.jpg" class="parallax_1 translate" data-speed="0.9" alt="">
+    <img src="./images/parallax/parallax_2_2.png" class="parallax_2 translate mo02" data-speed="0.6" alt="">
+    <img src="./images/parallax/parallax_3.png" class="parallax_3 translate mo03" data-speed="0.3" alt="">
+    <img src="./images/parallax/parallax_4.png" class="parallax_4 translate mo04" data-speed="0" alt="">
+    <img src="./images/parallax/parallax_5.png" class="parallax_5 translate mo05" data-speed="-0.3" alt="">
+    <img src="./images/parallax/parallax_6_2.png" class="parallax_6 translate mo06" data-speed="-0.7" alt="">
+    <img src="./images/parallax/parallax_7_2.png" class="parallax_7 translate mo07" data-speed="-0.9" alt="">
   </header>
 
 
 
-  <div class="side_parent_bt" data-aos="fade-left" data-aos-duration="700" data-aos-offset="-200" data-aos-anchor-placement="top-bottom"
-    data-aos-anchor="#anchor1">
+  <div class="side_parent_bt" data-aos="fade-left" data-aos-duration="700" data-aos-offset="-200"
+    data-aos-anchor-placement="top-bottom" data-aos-anchor="#anchor1">
     <a href="./order.html" class="side_bt1">
       <h3 class="s_bt1">預約入村<p>Order</p>
       </h3>
@@ -75,7 +86,7 @@
 
 
   <!-- -------------  rwd - hamburger_menu------------------  -->
-  <div class="rwd_nav">
+  <!-- <div class="rwd_nav">
     <div class="nav">
       <a href="./index.html">
         <img src="./images/logo_2.svg" alt="" class="logo">
@@ -85,9 +96,9 @@
         <div class="bar2"></div>
         <div class="bar3"></div>
         <div class="list">
-          <a href="./camps.html" class="rwd_menu_1" >帳篷旅館<p>Camps</p></a>
+          <a href="./camps.html" class="rwd_menu_1">帳篷旅館<p>Camps</p></a>
           <a href="./activities.html" class="rwd_menu_2">村民日常<p>Activities</p></a>
-          <a href="./kitchen.html" class="rwd_menu_3" >美食饗宴<p>Kitchen</p></a>
+          <a href="./kitchen.html" class="rwd_menu_3">美食饗宴<p>Kitchen</p></a>
           <a href="./agree.html" class="rwd_menu_4">村民守則<p>Agree</p></a>
           <a href="./location.html" class="rwd_menu_5">交通指南<p>Location</p></a>
           <a href="./order.html" class="rwd_menu_6">預約入村<p>Order</p></a>
@@ -95,7 +106,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -244,13 +255,66 @@
 
 
 
-  <script src="./js/index.js"></script>
+  <!-- <script src="./js/index.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./vendors/slick/js/slick.js"></script>
   <script src="./vendors/aos/js/aos.js"></script>
   <script>
     AOS.init();
   </script>
+
+
+
+
+  <!-- 滾動視差 -->
+  <script>
+    //場景初始化 init
+    var controller = new ScrollMagic.Controller();
+
+    var move_el = new TimelineMax();
+    move_el.to('.mo02', .5, {
+      y: -40,
+    }).to('.mo03', .5, {
+      y: -100,
+      delay:-.5
+    }).to('.mo04', .5, {
+      y: -170,
+      delay:-.5
+    }).to('.mo05', .5, {
+      y: -220,
+      delay:-.5
+    }).to('.mo06', .5, {
+      y: -240,
+      delay:-.45
+    }).to('.mo07', .5, {
+      y: -250,
+      delay:-.4
+    }).to('.logo', .5, {
+      scale:.5,
+      opacity:0,
+      delay:-.4
+    }).to('.mouse_scroll', .3, {
+      y: -130,
+      delay:-.6
+    }).to('.logo_guideline', .3, {
+      y:90,
+      height: '100px',
+      delay:-.6
+    }).to('.mouse_scroll', .2, {
+      opacity:0,
+      delay:-.5
+    });
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint02',
+      offset: 200, //場景觸發點位移
+      triggerHook: 0.2,  //瀏覽器觸發點 預設值0.5正中央
+    }).setTween(move_el).addIndicators().addTo(controller)
+
+
+  </script>
+
+
 
 
   <!-- hamburger_menu  -->
@@ -273,20 +337,20 @@
       arrows: true,
       responsive: [
         {
-          breakpoint:767, // RWD在767寬度時切換顯示數量
+          breakpoint: 767, // RWD在767寬度時切換顯示數量
           settings: {
             slidesToShow: 3, //一次顯示2個
             slidesToScroll: 1,//切換下一頁時移動1個
           }
         }
-        ,{
+        , {
           breakpoint: 575,// RWD在575寬度時切換顯示數量
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           }
         }
-        ,{
+        , {
           breakpoint: 400,// RWD在400寬度時切換顯示數量
           settings: {
             slidesToShow: 1,
@@ -295,6 +359,9 @@
         }]
     });
   </script>
+
+
+
 
 </body>
 
