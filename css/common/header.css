@@ -142,6 +142,7 @@ header{
     position: absolute;
     top:0px;
     transition: 0.4s;
+    z-index: 60;
   }
 
   .bar2{
@@ -154,6 +155,7 @@ header{
     top:10px;
     left:8px;
     transition: 0.4s;
+    z-index: 60;
   }
 
   .bar3{
@@ -165,22 +167,23 @@ header{
     position: absolute;
     top:20px;
     transition: 0.4s;
+    z-index: 60;
   }
 
   .list{
     /* border:1px solid blue; */
-    background-color: #ffffff;
-    border-radius: 15px;
-    opacity: .95;
-    box-shadow: 0 1px 5px rgba(0,0,0,.2);
-    width:95px;
-    height: 360px;
-    position: absolute;
-    right:-12px;
-    /* right:50%; */
-    top:35px;
+    position: fixed;
+    width: 38%;
+    height: 100%;
+    top:0;
+    right: 0;
+    opacity: 1;
+    background-color: #ddc4b9;
+    box-shadow: -2px 0px 10px rgba(0,0,0,.2);
+    border-radius: 100% 0 0 100%;
+    cursor: default;
     text-align: right;
-    z-index: 10;
+    z-index: 50;
     display: none;
   }
 
@@ -194,6 +197,7 @@ header{
     text-decoration: none;
     position: absolute;
     left:10px;
+    width: 100%;
   }
 
   .menu_1 > p , .menu_2 > p , .menu_3 > p , .menu_4 > p , .menu_5 > p , .menu_6 > p , .menu_7 > p{
@@ -207,31 +211,31 @@ header{
   }
 
   .menu_1{
-    top:15px;
-  }
-
-  .menu_2{
-    top:65px;
-  }
-
-  .menu_3{
     top:115px;
   }
 
+  .menu_2{
+    top: 175px;
+  }
+
+  .menu_3{
+    top:235px;
+  }
+
   .menu_4{
-    top:165px;
+    top:295px;
   }
 
   .menu_5{
-    top:215px;
+    top:355px;
   }
 
   .menu_6{
-    top:265px;
+    top:415px;
   }
 
   .menu_7{
-    top:315px;
+    top:475px;
   }
 
   .change .bar1 {
@@ -249,7 +253,7 @@ header{
   }
 
   #on , #on > p{
-    color: #AABE8D;
+    color: #ffffff;
   }
 
   .menu_1:hover , .menu_2:hover , .menu_3:hover ,
@@ -286,6 +290,9 @@ header{
     width: 140px;
     height: 40px;
     margin-left:50px;
+  }
+  .list{
+    width: 30%;
   }
 }
 
