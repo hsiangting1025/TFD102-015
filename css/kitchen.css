@@ -183,7 +183,7 @@ h1 > span{
 .contentner3{
   /* border: 1px solid green; */
   width: 425px;
-  height: : 425px;
+  height:425px;
   margin-left: 25px;
   display: flex;
   flex-direction: column;

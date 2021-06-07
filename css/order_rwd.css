@@ -1,0 +1,603 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    main{
+        width: 100%;
+    }
+    .order{
+        width:880px;
+    }
+    /* --------- step2 --------- */
+    .map{
+        width: calc(880px - 100px);
+        background-size: 110%;
+        background-position: center;
+    }
+    .tablinks{
+        transform: translateX(50px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .order{
+        width:768px;
+        padding: 0 15px;
+    }
+    /* --------- step1 --------- */
+    .form01{
+        margin: 0 25px 0 0;
+    }
+    .date{
+        border: 1.5px solid #6B6B6B;
+        border-radius: 15px;
+        height: 30px;
+        width: 170px;
+        opacity: .6;
+        cursor: pointer;
+    }
+    .date:last-child{
+        margin: 0;
+    }
+    
+    /* --------- step2 --------- */
+    .l02{
+        height: 440px;
+    }
+    .map_title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order_tent01{
+        margin:0 5px 0 0;
+    }
+    .order_tent02{
+        margin:0 5px 0 15px;
+    }
+    .order_tent03{
+        margin:0 5px 0 15px;
+    }
+    .map{
+        width: calc(768px - 100px - 30px);
+        height: 400px;
+        background-size: 110%;
+        background-position: center;
+    }
+    .tablinks{
+        transform: translateX(110px) scale(.9);
+    }
+
+    .tent2_1 {
+        right:490px;
+        bottom: 145px;
+    }
+    .tent2_2 {
+        right:530px;
+        bottom: 185px;
+    }
+    .tent2_3 {
+        right:575px;
+        bottom:218px;
+    }
+    .tent2_4 {
+        right:620px;
+        bottom: 250px;
+    }
+    .tent2_5 {
+        right:390px;
+        bottom: 55px;
+    }
+    .tent2_6 {
+        right:350px;
+        bottom: 95px;
+    }
+    .tent4_1{
+        right:320px;
+        bottom: 155px;
+    }
+    .tent4_2{
+        right:300px;
+        bottom: 205px;
+    }
+    .tent4_3{
+        right:280px;
+        bottom:255px;
+    }
+    .tent4_4{
+        right:370px;
+        bottom: 185px;
+    }
+    .tent4_5{
+        right:350px;
+        bottom: 235px;
+    }
+    .tent4_6{
+        right:330px;
+        bottom:285px;
+    }
+
+
+    .tabcontent{
+        padding: 0; 
+    }
+    table{
+        width: 200px;
+    }
+
+    /* --------- step3 --------- */
+    .adult , .child , .baby , .adult_p {
+        margin: 10px 12px 0 0;
+    }
+    .child_p{
+        margin: 10px 0 0 0;
+    }
+    .plus{
+        margin:0 0 5px 15px; 
+    }
+    h3{
+        margin: 0 3px 0 3px; 
+    }
+    .l03{
+        height: 280px;
+    } 
+}
+
+
+
+/* --------- price --------- */
+
+@media (min-width: 890px) and (max-width: 960px){
+    .price_total{
+        right: 8%;
+        bottom: 55%;
+    }
+}
+@media (min-width: 850px) and (max-width: 889px){
+    .price_total{
+        right: 6%;
+        bottom: 55%;
+    }
+}
+@media (min-width: 820px) and (max-width: 849px){
+    .price_total{
+        right: 4%;
+        bottom: 55%;
+    }
+}
+@media (min-width: 768px) and (max-width: 819px){
+    .price_total{
+        right: 3%;
+        bottom: 55%;
+    }
+}
+@media screen and (min-width: 768px){
+    .price_total02{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .price_total{
+        display: none;
+    }
+
+    .price_total02 .price_title{
+        margin: 0 0 10px 0;
+    }
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .order{
+        width:576px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /* --------- step1 --------- */
+    .l01{
+        height: 120px;
+    }
+    .block1 form{
+        display: flex;
+        flex-direction: column;
+    }
+    .form01{
+        margin-bottom: 10px;
+    }
+
+    /* --------- step2 --------- */
+    .l02{
+        height: 470px;
+    }
+    .map_title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order_tent01{
+        margin:0 5px 0 0;
+    }
+    .order_tent02{
+        margin:0 5px 0 15px;
+    }
+    .order_tent03{
+        margin:0 5px 0 15px;
+    }
+    .map{
+        width: calc(576px - 100px - 30px);
+        height: 340px;
+        background-size: 113%;
+        background-position: top;
+        justify-content: flex-start;
+        margin-top: 8px;
+    }
+    .tablinks{
+        transform: translateX(180px) scale(.8);
+    }
+    .tent2_1 {
+        right:425px;
+        bottom: 145px;
+    }
+    .tent2_2 {
+        right:460px;
+        bottom: 175px;
+    }
+    .tent2_3 {
+        right:495px;
+        bottom:205px;
+    }
+    .tent2_4 {
+        right:535px;
+        bottom: 230px;
+    }
+    .tent2_5 {
+        right:365px;
+        bottom: 95px;
+    }
+    .tent2_6 {
+        right:340px;
+        bottom: 130px;
+    }
+    .tent4_1{
+        right:320px;
+        bottom: 175px;
+    }
+    .tent4_2{
+        right:300px;
+        bottom: 215px;
+    }
+    .tent4_3{
+        right:280px;
+        bottom:255px;
+    }
+    .tent4_4{
+        right:370px;
+        bottom: 190px;
+    }
+    .tent4_5{
+        right:350px;
+        bottom: 230px;
+    }
+    .tent4_6{
+        right:330px;
+        bottom:270px;
+    }
+    .tabcontent{
+        display: flex;
+        flex-direction: row; 
+        align-items: flex-end;
+        padding: 0; 
+    }
+    .tab_text{
+        align-items: flex-start;
+        margin-right: 7px;
+    }
+    .tab_text > h2{
+        padding: 0;
+    }
+    .tab_text > h6{
+        text-align: left;
+        margin:5px 0 0 0;
+    }
+    table{
+        width: 225px;
+        height: 50px;
+        margin: 0;
+    }
+
+    /* --------- step3 --------- */
+    .l03{
+        height: 320px;
+    }
+    .choose_all{
+        display: flex;
+        flex-direction: column;
+    }
+    .adult , .child , .baby , .adult_p , .child_p{
+        margin: 10px 5px 5px 0;
+    }
+
+    .plus{
+        margin:0 0 5px 8px;
+    }
+    h3{
+        margin: 0 8px 0 5px;
+    }
+
+    /* --------- step4 --------- */
+    .l04{
+        height: 280px;
+    }
+}
+
+
+@media screen and (min-width: 576px){
+    .block2 .content2_2{
+        display: none;
+    }
+}
+@media screen and (max-width: 575px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .order{
+        width:100%;
+        padding: 0 20px;
+    }
+    
+    .l02{
+        height: 660px;
+    }
+    .block2 .content{
+        display: none;
+    }
+    .content2_2{
+        /* border:1px solid blue; */
+        width:calc(100% - 100px);
+        margin: 12px 0 0 0;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .choose_text{
+        font-size: 14px;
+        font-weight:400;
+        color:#6B6B6B;
+        margin: 0;
+    }
+    .num_tent{
+        border: 1.5px solid #6B6B6B;
+        border-radius: 15px;
+        height: 30px;
+        width: 70px;
+        margin: 10px 0 0 0;
+        opacity: .6;
+        cursor: pointer;
+    }
+    .num_tent:focus{
+        border: 2px solid #CCD970;
+        border-radius: 15px;
+        outline:none;
+    }
+    table{
+        border-collapse: collapse;
+        width: 330px;
+        height: 40px;
+        table-layout: auto;
+        margin-top: 25px;
+    }
+    
+    td > h1, td > h2 {
+        /* border: 1px solid blue; */
+        font-size: 16px;
+        font-weight:400;
+        color:#875855;
+        margin: 0;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    td > h1{
+        margin-top: 5px; 
+    }
+    td > h2{
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    td > h6{
+        font-size: 12px;
+        font-weight:400;
+        color:#6b6b6b;
+        margin: 0;
+    }
+
+    .l03{
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .order{
+        width:100%;
+        padding: 0 15px;
+    }
+    .block1 , .block2  , .block3, .block4, .block6{
+        display:flex;
+        flex-direction: column;
+        margin: 0 0 60px 0;
+    }
+    .block6{
+        margin: 100px 0 100px 0;  
+    }
+    .line_num{
+        margin: 0 0 5px 0;
+    }
+    .line{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* --------- step1 --------- */
+    .date{
+        margin: 0;
+    }
+
+    /* --------- step2 --------- */
+    .content2_2{
+        width:100% ;
+        margin: 0;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    .map_title h2{
+        font-size: 16px;
+        font-weight:500;
+        color:#6B6B6B;
+        margin: 0 0 5px 0;
+        padding: 0;
+        text-align: left;
+    }
+    table{
+        width: 100%;
+    }
+
+    /* --------- step3 --------- */
+    ul{
+        margin-bottom:0;
+    }
+    .content > ul > li:last-child{
+        margin-bottom: 0;
+    }
+
+    /* --------- step4 --------- */
+    .block4 form{
+        width: 100%;
+        margin: 0;
+    }
+
+    /* --------- price --------- */
+    .price_total02{
+        margin: 30px 10px 100px 10px;
+    }
+
+    /* --------- next --------- */
+    .block5, .block7{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .circle{
+        display: none;     
+    }
+    .block5 h2,.block7 h2{
+        margin: 0 0 10px 0;
+    }
+
+    /* --------- step5 --------- */
+    .content6{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 360px){
+    main{
+        width: 100%;
+        margin-top:110px;
+    }
+    .order{
+        width:100%;
+        padding: 0 8px;
+    }
+    /* --------- step1 --------- */
+    .date{
+        width: 157px;
+    }
+
+    /* --------- step2 --------- */
+    .choose_tent{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0 0 0;
+    }
+    .num_tent{
+        width: 70px;
+        margin: 5px 0 5px 0;
+    }
+    td > h1{
+        font-size: 14px;
+        margin-top: 5px; 
+    }
+    table{
+        margin-top: 15px;
+    }
+
+    /* --------- step2 --------- */
+    .adult , .child , .adult_p , .child_p{
+        width: 85px;
+    }
+    .baby{
+        width: 100px;
+    }
+}
+
+
+
+
+
+/* --------- openwindow --------- */
+@media (min-width: 576px) and (max-width: 767px){
+    .window-content{
+        width: 540px;
+        margin: 8% auto 15% auto;
+    }
+    .window .container {
+        padding: 15px 25px 0 25px;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 575px){
+    .window-content{
+        width: 420px;
+        margin: 8% auto 15% auto;
+    }
+    .window .container {
+        padding: 15px 25px 0 25px;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 449px){
+    .window-content{
+        width: 350px;
+    }
+    .window .container {
+        padding: 15px 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 369px){
+    .window-content{
+        width: 290px;
+    }
+    .window .container {
+        padding: 15px 10px 0 10px;
+    }
+}
+

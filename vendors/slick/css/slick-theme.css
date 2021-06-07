@@ -66,6 +66,9 @@
 .slick-prev:before,
 .slick-next:before
 {
+    /* border:1px solid red; */
+    
+
     font-family: 'slick';
     font-size: 25px;
     line-height: 1;
@@ -79,6 +82,10 @@
 
 .slick-prev
 {
+    /* border:1px solid blue; */
+    width: 30px;
+    height: 30px;
+
     left: 8px;
     display: inline-block;
 }
@@ -99,7 +106,11 @@
 
 .slick-next
 {
-    right: -25px;
+    /* border:1px solid blue; */
+    width: 30px;
+    height: 25px;
+    
+    right: -33px;
         display: inline-block;
 }
 [dir='rtl'] .slick-next

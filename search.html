@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title>SOME VILLAGE</title>
 
   <link href="./css/search.css" rel="stylesheet">
+  <link href="./css/search_rwd.css" rel="stylesheet">
   <link rel="stylesheet" href="./vendors/aos/css/aos.css">
 </head>
+
 <body>
 
   <header>
@@ -17,13 +20,13 @@
       </a>
       <ul class="nav_list">
         <li>
-          <a href="./camps.html" class="menu_1" >帳篷旅館<p>Camps</p></a>
+          <a href="./camps.html" class="menu_1">帳篷旅館<p>Camps</p></a>
         </li>
         <li>
           <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
         </li>
         <li>
-          <a href="./kitchen.html" class="menu_3" >美食饗宴<p>Kitchen</p></a>
+          <a href="./kitchen.html" class="menu_3">美食饗宴<p>Kitchen</p></a>
         </li>
         <li>
           <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
@@ -38,13 +41,31 @@
           <a href="./search.html" class="menu_7" id="on">訂單查詢<p>Search</p></a>
         </li>
       </ul>
+
+      <!-- -------------hamburger_menu------------------  -->
+      <div class="hamburger_menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="menu_1">帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="menu_3">美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="menu_5">交通指南<p>Location</p></a>
+          <a href="./order.html" class="menu_6">預約入村<p>Order</p></a>
+          <a href="./search.html" class="menu_7" id="on">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
+
     </div>
   </header>
 
 
-  <div class="side_parent_bt"  data-aos="fade-left" data-aos-duration="1000" >
+  <div class="side_parent_bt" data-aos="fade-left" data-aos-duration="1000">
     <a href="./order.html" class="side_bt1">
-      <h3 class="s_bt1">預約入村<p>Order</p></h3>
+      <h3 class="s_bt1">預約入村<p>Order</p>
+      </h3>
     </a>
   </div>
 
@@ -55,12 +76,16 @@
     <div class="search">
       <form class="content" action="#" method="post">
         <label for="tel" class="title">手機號碼：</label>
-        <input type="text" id="tel" name="tel" class="data" placeholder="09xxxxxxxx" style="font-size:16px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
+        <input type="text" id="tel" name="tel" class="data" placeholder="09xxxxxxxx"
+          style="font-size:16px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
         <label for="num" class="title">訂單編號：</label>
-        <input type="text" id="num" name="num" class="data" placeholder="201xxxxxxx" style="font-size:16px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
-        <button type="submit" ><h4>查詢<p>Search</p></h4></button>
+        <input type="text" id="num" name="num" class="data" placeholder="201xxxxxxx"
+          style="font-size:16px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
+        <button type="button" onclick="document.getElementById('more').style.display='block'">
+          <h4>查詢<p>Search</p>
+          </h4>
+        </button>
       </form>
-      <a class="more" href="#" onclick="document.getElementById('more').style.display='block'"></a>
     </div>
   </main>
 
@@ -83,7 +108,7 @@
     <div class="footer">
       <div class="social_list">
         <a href="https://www.facebook.com/">
-          <img src="./images/icon/Facebook.svg" alt="" class="fb" >
+          <img src="./images/icon/Facebook.svg" alt="" class="fb">
         </a>
         <a href="https://www.instagram.com/">
           <img src="./images/icon/Instagram.svg" alt="" class="ig">
@@ -94,27 +119,33 @@
       <p>本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
         <br>參考資源：Pinterest ｜ CMPVillage。若有侵權疑慮，您可私訊<a href="https://www.facebook.com/webindex/">TibaMe-前端設計工程師
           養成班</a>，後續會由專人協助處理。
-        </p>
-      </div>
-    </footer>
+      </p>
+    </div>
+  </footer>
 
 
 
 
 
+  <!-- hamburger_menu  -->
+  <script>
+    var bt_hamburger_menu = document.getElementsByClassName("hamburger_menu")[0];
+    bt_hamburger_menu.addEventListener("click", function () {
+      this.classList.toggle("change");
+    });
+  </script>
 
 
-
-    <!-- openwindow -->
-    <script>
+  <!-- openwindow -->
+  <script>
     var window = document.getElementById('more');
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
       if (event.target == window) {
         window.style.display = "none";
       }
     }
-    </script>
+  </script>
 
 
 
@@ -128,4 +159,5 @@
 
 
 </body>
+
 </html>

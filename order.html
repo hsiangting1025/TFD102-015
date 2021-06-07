@@ -7,6 +7,7 @@
   <title>SOME VILLAGE</title>
 
   <link href="./css/order.css" rel="stylesheet">
+  <link href="./css/order_rwd.css" rel="stylesheet">
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <!-- scrollmagic -->
@@ -46,6 +47,23 @@
           <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
         </li>
       </ul>
+
+      <!-- -------------hamburger_menu------------------  -->
+      <div class="hamburger_menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="list">
+          <a href="./camps.html" class="menu_1">帳篷旅館<p>Camps</p></a>
+          <a href="./activities.html" class="menu_2">村民日常<p>Activities</p></a>
+          <a href="./kitchen.html" class="menu_3">美食饗宴<p>Kitchen</p></a>
+          <a href="./agree.html" class="menu_4">村民守則<p>Agree</p></a>
+          <a href="./location.html" class="menu_5">交通指南<p>Location</p></a>
+          <a href="./order.html" class="menu_6" id="on">預約入村<p>Order</p></a>
+          <a href="./search.html" class="menu_7">訂單查詢<p>Search</p></a>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -61,12 +79,16 @@
           <h1 class="cl01">01</h1>
         </div>
         <form class="content" action="#" method="post">
-          <label for="checkin" class="title">請選擇入住日期：</label>
-          <input type="date" id="checkin" name="checkin" class="date"
-            style="font-size:14px;color:#6B6B6B;padding:10px 15px;font-family: 'Noto Sans TC'">
-          <label for="checkout" class="title">請選擇退房日期：</label>
-          <input type="date" id="checkout" name="checkout" class="date"
-            style="font-size:14px;color:#6B6B6B;padding:10px 10px;font-family: 'Noto Sans TC'">
+          <div class="form01">
+            <label for="checkin" class="title">請選擇入住日期：</label>
+            <input type="date" id="checkin" name="checkin" class="date"
+              style="font-size:14px;color:#6B6B6B;padding:10px 15px;font-family: 'Noto Sans TC'">
+          </div>
+          <div class="form02">
+            <label for="checkout" class="title">請選擇退房日期：</label>
+            <input type="date" id="checkout" name="checkout" class="date"
+              style="font-size:14px;color:#6B6B6B;padding:10px 10px;font-family: 'Noto Sans TC'">
+          </div>
         </form>
       </div>
 
@@ -80,32 +102,35 @@
           <h1 class="cl02">02</h1>
         </div>
         <div class="content">
-          <h2>請於地圖點選帳篷，若帳篷不可選擇代表已被預訂
-            <div class="order_tent01">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
-                <title>camp_order</title>
-                <path
-                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
-              </svg>
-            </div> <span>您的選擇</span>
-            <div class="order_tent02">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
-                <title>camp_order</title>
-                <path
-                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
-              </svg>
-            </div> <span>空帳 可選擇</span>
-            <div class="order_tent03">
-              <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
-                <title>camp_order</title>
-                <path
-                  d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
-              </svg>
-            </div> <span>滿帳 不可選擇 </span>
-          </h2>
+          <div class="map_title">
+            <h2>請於地圖點選帳篷，若帳篷不可選擇代表已被預訂</h2>
+            <div class="order_tent">
+              <div class="order_tent01">
+                <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                  <title>camp_order</title>
+                  <path
+                    d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+                </svg>
+              </div> <span>您的選擇</span>
+              <div class="order_tent02">
+                <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                  <title>camp_order</title>
+                  <path
+                    d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+                </svg>
+              </div> <span>空帳 可選擇</span>
+              <div class="order_tent03">
+                <svg id="圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.83 495.83">
+                  <title>camp_order</title>
+                  <path
+                    d="M462.76,391.4H444.41l-1.87-15.82c-14.52-119.24-34.93-139.05-44-154.24s-57.9-67.46-104.12-119.74c-38.86-44.54-45.57-42.9-46.94-42.9s-8.08-1.64-46.94,42.9c-46.21,52.29-95.1,104.56-104.12,119.74s-29.43,35-44,154.24L50.65,391.4H33.07a18.47,18.47,0,0,0,0,36.94H462.76a18.47,18.47,0,1,0,0-36.94ZM306.62,362.25H193V342.87l56.26-61.37q12.18-13.57,17.34-22.68a36.76,36.76,0,0,0,5.16-18.27q0-12.06-6.79-19.49t-18.27-7.42q-13.69,0-21.23,8.35T218,244.85H189.8a55.24,55.24,0,0,1,7-27.78,48.33,48.33,0,0,1,20.07-19.2q13-6.84,30.1-6.84,24.59,0,38.81,12.35T300,237.54q0,12.65-7.13,26.51t-23.37,31.5l-41.3,44.2h78.42Z" />
+                </svg>
+              </div> <span>滿帳 不可選擇 </span>
+            </div>
+          </div>
 
           <div class="map">
-            <img src="./images/order/map_order_2_1.svg" class="tablinks tent2_1" onclick="openRoom(event, 'DT')"
+            <img src="./images/order/map_order_2_1_c.svg" class="tablinks tent2_1" onclick="openRoom(event, 'DT')"
               id="defaultOpen">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_2">
             <img src="./images/order/map_order_2_2.svg" class="tablinks tent2_3">
@@ -121,11 +146,13 @@
             <img src="./images/order/map_order_4_2.svg" class="tablinks tent4_5">
             <img src="./images/order/map_order_4_2.svg" class="tablinks tent4_6">
             <div id="DT" class="tabcontent">
-              <h1>豪華兩人帳 一大床</h1>
-              <h2>Double Tent</h2>
-              <h6>入住人數：2人<br>
-                *每帳限加一床，最多三位入住
-              </h6>
+              <div class="tab_text">
+                <h1>豪華兩人帳 一大床</h1>
+                <h2>Double Tent</h2>
+                <h6>入住人數：2人<br>
+                  *每帳限加一床，最多三位入住
+                </h6>
+              </div>
               <table>
                 <tr bgcolor="#DDC4B9">
                   <td>平日</td>
@@ -140,11 +167,13 @@
               </table>
             </div>
             <div id="QT" class="tabcontent">
-              <h1>高級四人帳 四小床</h1>
-              <h2>Quad Tent</h2>
-              <h6>入住人數：4人<br>
-                *恕無法提供加床、加人服務，限住四人
-              </h6>
+              <div class="tab_text">
+                <h1>高級四人帳 四小床</h1>
+                <h2>Quad Tent</h2>
+                <h6>入住人數：4人<br>
+                  *恕無法提供加床、加人服務，限住四人
+                </h6>
+              </div>
               <table>
                 <tr bgcolor="#DDC4B9">
                   <td>平日</td>
@@ -159,9 +188,135 @@
               </table>
             </div>
           </div>
+        </div>
 
+
+        <div class="content2_2">
+          <div class="map_title">
+            <h2>請選擇帳篷及數量，若不可選擇代表已經額滿：</h2>
+          </div>
+          <div class="choose_all">
+            <div class="choose_tent">
+              <label for="checkin" class="choose_text">豪華兩人帳 一大床 Double Tent：</label>
+              <select name="num" class="num_tent"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1">0 帳</option>
+                <option value="2" selected>1 帳</option>
+                <option value="3">2 帳</option>
+                <option value="4">3 帳</option>
+                <option value="5">4 帳</option>
+              </select>
+            </div>
+            <div class="choose_tent">
+              <label for="checkin" class="choose_text">高級兩人帳 兩小床 Twin Tent：</label>
+              <select name="num" class="num_tent"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 帳</option>
+                <option value="2">1 帳</option>
+                <option value="3">2 帳</option>
+              </select>
+            </div>
+            <div class="choose_tent">
+              <label for="checkin" class="choose_text">豪華四人帳 兩大床 DoubleDouble Tent：</label>
+              <select name="num" class="num_tent"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 帳</option>
+                <option value="2">1 帳</option>
+                <option value="3">2 帳</option>
+                <option value="4">3 帳</option>
+                <option value="5">4 帳</option>
+              </select>
+            </div>
+            <div class="choose_tent">
+              <label for="checkin" class="choose_text">高級四人帳 四小床 Quad Tent：</label>
+              <select name="num" class="num_tent"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 帳</option>
+                <option value="2">1 帳</option>
+                <option value="3">2 帳</option>
+              </select>
+            </div>
+          </div>
+
+          <table class="table2_2">
+            <tr bgcolor="#DDC4B9">
+              <td>帳型／價錢</td>
+              <td>平日</td>
+              <td>假日</td>
+              <td>特殊假日</td>
+            </tr>
+            <tr>
+              <td>
+                <h1>豪華兩人帳 一大床</h1>
+                <h2>Double Tent</h2>
+              </td>
+              <td>$ 5,300</td>
+              <td>$ 7,100</td>
+              <td>$ 7,100</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <h6>
+                  入住人數：2人 &nbsp;
+                  *每帳限加一床，最多三位入住
+                </h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>高級兩人帳 兩小床</h1>
+                <h2>Twin Tent</h2>
+              </td>
+              <td>$ 5,300</td>
+              <td>$ 7,100</td>
+              <td>$ 7,100</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <h6>
+                  入住人數：2人 &nbsp;
+                  *恕無法提供加床、加人服務，限住兩人
+                </h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>豪華四人帳 兩大床</h1>
+                <h2>DoubleDouble Tent</h2>
+              </td>
+              <td>$ 8,200</td>
+              <td>$ 11,800</td>
+              <td>$ 11,800</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <h6>
+                  入住人數：4人 &nbsp;
+                  *每帳限加一床，最多五位入住
+                </h6>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h1>高級四人帳 四小床</h1>
+                <h2>Quad Tent</h2>
+              </td>
+              <td>$ 8,200</td>
+              <td>$ 11,800</td>
+              <td>$ 11,800</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <h6>
+                  入住人數：4人 &nbsp;
+                  *恕無法提供加床、加人服務，限住四人
+                </h6>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
+
 
       <!-- 觸發點 -->
       <div id="keypoint03"></div>
@@ -174,50 +329,58 @@
         </div>
         <form class="content" action="#" method="post">
           <h2>請選擇入住人數及加購人數：</h2>
-          <select name="num" class="adult"
-            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
-            <option value="1" selected>1 成人</option>
-            <option value="2">2 成人</option>
-            <option value="3">3 成人</option>
-            <option value="4">4 成人</option>
-          </select>
-          <select name="num" class="child"
-            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
-            <option value="1" selected>0 孩童</option>
-            <option value="2">1 孩童</option>
-            <option value="3">2 孩童</option>
-            <option value="4">3 孩童</option>
-          </select>
-          <select name="num" class="baby"
-            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
-            <option value="1" selected>0 嬰幼兒</option>
-            <option value="2">1 嬰幼兒</option>
-            <option value="3">2 嬰幼兒</option>
-            <option value="4">3 嬰幼兒</option>
-          </select>
-          <span class="plus"></span>
-          <h3>加人：</h3>
-          <select name="num" class="adult_p"
-            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
-            <option value="1" selected>0 成人</option>
-            <option value="2">1 成人</option>
-          </select>
-          <select name="num" class="child_p"
-            style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
-            <option value="1" selected>0 孩童</option>
-            <option value="2">1 孩童</option>
-          </select>
-          <p>
-            a.未滿3歲嬰幼兒均不收取費用。<br>
-            b.加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。<br>
-            c.加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。<br>
-            ．如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。
-          </p>
+          <div class="choose_all">
+            <div class="choose01">
+              <select name="num" class="adult"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>1 成人</option>
+                <option value="2">2 成人</option>
+                <option value="3">3 成人</option>
+                <option value="4">4 成人</option>
+              </select>
+              <select name="num" class="child"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 孩童</option>
+                <option value="2">1 孩童</option>
+                <option value="3">2 孩童</option>
+                <option value="4">3 孩童</option>
+              </select>
+              <select name="num" class="baby"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 嬰幼兒</option>
+                <option value="2">1 嬰幼兒</option>
+                <option value="3">2 嬰幼兒</option>
+                <option value="4">3 嬰幼兒</option>
+              </select>
+            </div>
+            <div class="choose02">
+              <span class="plus"></span>
+              <h3>加人：</h3>
+              <select name="num" class="adult_p"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 成人</option>
+                <option value="2">1 成人</option>
+              </select>
+              <select name="num" class="child_p"
+                style="font-size:14px;color:#6B6B6B;padding:0 10px;font-family: 'Noto Sans TC'">
+                <option value="1" selected>0 孩童</option>
+                <option value="2">1 孩童</option>
+              </select>
+            </div>
+          </div>
+          <ul>
+            <li>未滿3歲嬰幼兒均不收取費用。</li>
+            <li>加人不加床、含備品、含餐食，適用3~5歲( 120公分以下) 的孩童：平日 $ 1,450/位 ； 假日 $ 1,800/位 ； 特殊假日 $ 1,800/位。</li>
+            <li>加人加床、含備品、含餐食，適用6歲以上( 120公分以上) 的旅客：平日 $ 1,700/位 ； 假日 $ 2,200/位 ； 特殊假日 $ 2,200/位。</li>
+            <li>如您實際入住人數(含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂位，並收取相關費用。</li>
+          </ul>
         </form>
       </div>
 
       <!-- 觸發點 -->
       <div id="keypoint04"></div>
+      <!-- 觸發點 -->
+      <div id="keypoint08"></div>
       <div class="block4">
         <div class="line_num">
           <div><span class="cl04">STEP </span>
@@ -225,55 +388,97 @@
           </div>
           <h1 class="cl04">04</h1>
         </div>
-        <form class="content" action="#" method="post">
+        <form class="content4" action="#" method="post">
           <h2>請填寫入住者資料：</h2>
-          <label for="checkin" class="title2">姓名：</label>
-          <input type="text" id="name" name="name" class="name" placeholder="李知恩"
-            style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="5">
-          <br>
-          <label for="tel" class="title2">手機：</label>
-          <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx"
-            style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
-          <br>
-          <label for="tel" class="title2">mail：</label>
-          <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com"
-            style="font-size:14px;padding:10px 15px;font-family: 'Roboto'">
-          <br>
-          <label class="title3">備註：</label>
-          <textarea rows="5" cols="16" name="notes" class="notes" placeholder="需求需視狀況安排"
-            style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'"></textarea>
-        </form>
-
-        <!-- 觸發點 -->
-        <div id="keypoint08"></div>
-        <div class="price_total">
-          <div class="price_title">
-            <div class="title_line"></div>
-            <h1>訂單內容</h1>
-            <div class="title_line"></div>
+          <div class="check_text">
+            <label for="checkin" class="title2">入住者姓名：</label>
+            <input type="text" id="name" name="name" class="name" placeholder="李知恩"
+              style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC' " maxlength="5">
+            <br>
+            <label for="tel" class="title2">手機號碼：</label>
+            <input type="text" id="tel" name="tel" class="tel" placeholder="09xxxxxxxx"
+              style="font-size:14px;padding:10px 15px;font-family: 'Roboto'" maxlength="10">
+            <br>
+            <label for="tel" class="title2">E-mail：</label>
+            <input type="text" id="mail" name="mail" class="mail" placeholder="xxxxx@gmail.com"
+              style="font-size:14px;padding:10px 15px;font-family: 'Roboto'">
+            <br>
+            <label class="title3">需求 / 備註：</label>
+            <textarea rows="5" cols="16" name="notes" class="notes" placeholder="需求需視狀況安排"
+              style="font-size:14px;padding:10px 15px;font-family: 'Roboto','Noto Sans TC'"></textarea>
           </div>
-          <div class="price_content">
-            <div class="price_date">
-              <h3>2021/12/30</h3><span> - </span>
-              <h3>2022/01/01</h3>
+        </form>
+      </div>
+
+      <!-- rwd < 767 price -->
+      <div class="price_total02">
+        <div class="price_title">
+          <div class="title_line"></div>
+          <h1>訂單內容</h1>
+          <div class="title_line"></div>
+        </div>
+        <div class="price_content">
+          <div class="price_date">
+            <h3>2021/12/30</h3><span> - </span>
+            <h3>2022/01/01</h3>
+          </div>
+          <div class="price_detail">
+            <div class="price_detail_ti">
+              <h3>豪華兩人帳 一大床</h3>
+              <h6>Double Tent</h6>
             </div>
-            <div class="price_detail">
-              <h3>豪華兩人帳 一大床 Double Tent</h3>
-              <span>$ 7,100</span>
-            </div>
-            <div class="price_plus">
+            <span>$ 7,100</span>
+          </div>
+          <div class="price_plus">
+            <div class="plus_ti">
               <span class="plus"></span>
               <h3>1 成人</h3>
-              <span>$ 2,200</span>
             </div>
-            <div class="price_line"></div>
-            <div class="price_end">
-              <h3>總計 Total</h3>
-              <span>$ 9,300</span>
-            </div>
+            <span>$ 2,200</span>
+          </div>
+          <div class="price_line"></div>
+          <div class="price_end">
+            <h3>總計 Total</h3>
+            <span>$ 9,300</span>
           </div>
         </div>
       </div>
+
+
+      <!-- rwd > 767 price -->
+      <div class="price_total">
+        <div class="price_title">
+          <div class="title_line"></div>
+          <h1>訂單內容</h1>
+          <div class="title_line"></div>
+        </div>
+        <div class="price_content">
+          <div class="price_date">
+            <h3>2021/12/30</h3><span> - </span>
+            <h3>2022/01/01</h3>
+          </div>
+          <div class="price_detail">
+            <div class="price_detail_ti">
+              <h3>豪華兩人帳 一大床</h3>
+              <h6>Double Tent</h6>
+            </div>
+            <span>$ 7,100</span>
+          </div>
+          <div class="price_plus">
+            <div class="plus_ti">
+              <span class="plus"></span>
+              <h3>1 成人</h3>
+            </div>
+            <span>$ 2,200</span>
+          </div>
+          <div class="price_line"></div>
+          <div class="price_end">
+            <h3>總計 Total</h3>
+            <span>$ 9,300</span>
+          </div>
+        </div>
+      </div>
+
 
       <!-- 觸發點 -->
       <div id="keypoint05"></div>
@@ -300,7 +505,7 @@
             </div>
           </div>
           <form class="content6" action="#" method="post">
-            <h2>請輸入信用卡付款資訊</h2>
+            <h2>請輸入信用卡付款資訊：</h2>
             <div class="payment_detail">
               <label for="p_card" class="title2">卡號：</label>
               <input type="text" id="p_card" name="p_card" class="p_card" placeholder="xxxxxxxxxxxxxxxx"
@@ -345,29 +550,35 @@
       <div class="container">
         <h1>村民守則 Agree</h1>
         <h3>時間</h3>
-        <h4>．入村時間：14:30後，離村時間：12:00前。</h4>
+        <ul>
+          <li>入村時間：14:30後，離村時間：12:00前。</li>
+        </ul>
         <h3>入住需知</h3>
-        <h4>．入住時請出示附大頭照之有效證件如身分證、健保卡、護照或居留證。<br>
-          ．如您實際入住人數(包含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂單<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;並依取消規定，收取相關費用。</h4>
+        <ul>
+          <li>入住時請出示附大頭照之有效證件如身分證、健保卡、護照或居留證。</li>
+          <li>如您實際入住人數(包含大人+小孩)，超過上述之人數規定，本村將有權利取消您的訂單並依取消規定，收取相關費用。</li>
+        </ul>
         <h3>取消預定</h3>
-        <h4>．預定日期十天前取消訂位，退還全數金額。<br>
-          ．預定日期七天起至十天前取消訂位，退還50%金額。<br>
-          ．預定日期二至六日前取消訂位，退還30%金額。<br>
-          ．預定日期當日至一日前取消，金額將不予退費。<br>
-          &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
-        </h4>
+        <ul>
+          <li>預定日期十天前取消訂位，退還全數金額。</li>
+          <li>預定日期七天起至十天前取消訂位，退還50%金額。</li>
+          <li>預定日期二至六日前取消訂位，退還30%金額。</li>
+          <li>預定日期當日至一日前取消，金額將不予退費。</li>
+          <li>★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。</li>
+        </ul>
         <h3>更改/延期日期</h3>
-        <h4>．預定日期十天前提出申請，可保留金額6個月。<br>
-          ．更改/延期異動完成後不得辦理取消退款。
-        </h4>
+        <ul>
+          <li>預定日期十天前提出申請，可保留金額6個月。</li>
+          <li>更改/延期異動完成後不得辦理取消退款。</li>
+        </ul>
         <h3>颱風/連續雨季</h3>
-        <h4>．若遇到不可抗力因素如颱風等天災（由中央氣象局已發布陸上警報為準）。<br>
-          ．最晚請於預定日期前一天申請取消預定，可退還全數金額或延期一次，否則不予退費。<br>
-          ．短暫陣雨及晴時多雲偶陣雨恕不受理退費或延期。<br>
-          ．遇連續多日雨季，可視現場營地情況，可申請取消或延期一次，延期可保留金額6個月。<br>
-          &nbsp;★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。
-        </h4>
+        <ul>
+          <li>若遇到不可抗力因素如颱風等天災（由中央氣象局已發布陸上警報為準）。</li>
+          <li>最晚請於預定日期前一天申請取消預定，可退還全數金額或延期一次，否則不予退費。</li>
+          <li>短暫陣雨及晴時多雲偶陣雨恕不受理退費或延期。</li>
+          <li>遇連續多日雨季，可視現場營地情況，可申請取消或延期一次，延期可保留金額6個月。</li>
+          <li>★★★以上退款金額需扣除銀行手續費15元，請提供訂位者本人帳戶。</li>
+        </ul>
         <span><input type="radio" class="oo">我已完整詳閱並同意村民守則</span>
         <button onclick="myFunction();document.getElementById('more').style.display='none'" class="next">
           <h4>前往付款<p>Payment</p>
@@ -424,7 +635,13 @@
 
 
 
-
+  <!-- hamburger_menu  -->
+  <script>
+    var bt_hamburger_menu = document.getElementsByClassName("hamburger_menu")[0];
+    bt_hamburger_menu.addEventListener("click", function () {
+      this.classList.toggle("change");
+    });
+  </script>
 
 
   <!--  tablink  -->
@@ -470,22 +687,152 @@
 
   <script>
     var tent2_1 = document.getElementsByClassName("tent2_1")[0];
+    var tent4_1 = document.getElementsByClassName("tent4_1")[0];
     tent2_1.addEventListener("click", function () {
       if (tent2_1.src.match("map_order_2_1_c")) {
         tent2_1.src = "./images/order/map_order_2_1.svg";
       } else {
         tent2_1.src = "./images/order/map_order_2_1_c.svg";
+        tent4_1.src = "./images/order/map_order_4_1.svg";
       }
     });
 
-    var tent4_1 = document.getElementsByClassName("tent4_1")[0];
     tent4_1.addEventListener("click", function () {
       if (tent4_1.src.match("map_order_4_1_c")) {
         tent4_1.src = "./images/order/map_order_4_1.svg";
       } else {
         tent4_1.src = "./images/order/map_order_4_1_c.svg";
+        tent2_1.src = "./images/order/map_order_2_1.svg";
       }
     });
+  </script>
+
+
+
+
+  <!-- 滾動變色 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    // $(window).on('resize', function (e) {
+    //   if ($(window).width() > 767) {
+    //場景初始化 init
+    var controller = new ScrollMagic.Controller();
+
+    var cl01_el = TweenMax.to('.cl01', .3, {
+      color: '#cbd970'
+    });
+
+    var cl02_el = TweenMax.to('.cl02', .3, {
+      color: '#cbd970'
+    });
+
+    var cl03_el = TweenMax.to('.cl03', .3, {
+      color: '#cbd970'
+    });
+
+    var cl04_el = TweenMax.to('.cl04', .3, {
+      color: '#cbd970'
+    });
+
+
+
+    var cir01_el = new TimelineMax();
+    cir01_el.to('.cir01', .2, {
+      backgroundColor: '#cbd970',
+      opacity: .5
+    }).to('.cl04', .3, {
+      color: '#C89D8C',
+      delay: .5
+    });
+
+    var cl06_el = new TimelineMax();
+    cl06_el.to('.cl06', .3, {
+      color: '#cbd970'
+    }).to('.cir01', .2, {
+      backgroundColor: '#ddc4b9',
+      opacity: 1,
+      delay: .5
+    });
+
+    var cir02_el = new TimelineMax();
+    cir02_el.to('.cir02', .2, {
+      backgroundColor: '#cbd970',
+      opacity: .5
+    }).to('.cl06', .3, {
+      color: '#C89D8C',
+      delay: .5
+    });
+
+    var price_total_el = TweenMax.from('.price_total', .1, {
+      opacity: 0,
+    });
+
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint01',
+      offset: -150, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl01_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint02',
+      offset: -120, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 500 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl02_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint03',
+      offset: -400, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl03_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint04',
+      offset: -280, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl04_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint05',
+      offset: -450, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 100 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cir01_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint06',
+      offset: -600, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cl06_el).addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint07',
+      offset: -550, //場景觸發點位移
+      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(cir02_el).addTo(controller)
+
+    // new ScrollMagic.Scene({
+    //   triggerElement: '#keypoint08',
+    //   offset: -150, //場景觸發點位移
+    //   triggerHook: 0.3,  //瀏覽器觸發點 預設值0.5正中央
+    //   // duration: 200 //瀏覽器結束點 200px內動畫結束
+    // }).setTween(price_total_el).addIndicators().addTo(controller)
+
+    new ScrollMagic.Scene({
+      triggerElement: '#keypoint08',
+      offset: -150, //場景觸發點位移
+      triggerHook: 0.3,  //瀏覽器觸發點 預設值0.5正中央
+      // duration: 200 //瀏覽器結束點 200px內動畫結束
+    }).setTween(price_total_el).addTo(controller)
+
+    //   }
+    // });
   </script>
 
 
@@ -519,122 +866,6 @@
       }
     }
   </script>
-
-
-
-
-
-  <!-- 滾動變色 -->
-  <script>
-    //場景初始化 init
-    var controller = new ScrollMagic.Controller();
-
-    var cl01_el = TweenMax.to('.cl01', .3, {
-      color: '#cbd970'
-    });
-
-    var cl02_el = TweenMax.to('.cl02', .3, {
-      color: '#cbd970'
-    });
-
-    var cl03_el = TweenMax.to('.cl03', .3, {
-      color: '#cbd970'
-    });
-
-    var cl04_el = TweenMax.to('.cl04', .3, {
-      color: '#cbd970'
-    });
-
-    var cir01_el =  new TimelineMax();
-    cir01_el.to('.cir01', .2, {
-      backgroundColor: '#cbd970',
-      opacity: .5
-    }).to('.cl04', .3, {
-      color: '#C89D8C',
-      delay:.5
-    });
-
-    var cl06_el = new TimelineMax();
-    cl06_el.to('.cl06', .3, {
-      color: '#cbd970'
-    }).to('.cir01', .2, {
-      backgroundColor: '#ddc4b9',
-      opacity: 1,
-      delay:.5
-    });
-
-    var cir02_el = new TimelineMax();
-    cir02_el.to('.cir02', .2, {
-      backgroundColor: '#cbd970',
-      opacity: .5
-    }).to('.cl06', .3, {
-      color: '#C89D8C',
-      delay:.5
-    });
-
-    var price_total_el = TweenMax.from('.price_total', 0.1, {
-      opacity: 0,
-    });
-
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint01',
-      offset: -150, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cl01_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint02',
-      offset: -120, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 500 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cl02_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint03',
-      offset: -400, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cl03_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint04',
-      offset: -280, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cl04_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint05',
-      offset: -450, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 100 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cir01_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint06',
-      offset: -600, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cl06_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint07',
-      offset: -550, //場景觸發點位移
-      triggerHook: 0,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(cir02_el).addIndicators().addTo(controller)
-
-    new ScrollMagic.Scene({
-      triggerElement: '#keypoint08',
-      offset: -150, //場景觸發點位移
-      triggerHook: 0.3,  //瀏覽器觸發點 預設值0.5正中央
-      // duration: 200 //瀏覽器結束點 200px內動畫結束
-    }).setTween(price_total_el).addIndicators().addTo(controller)
-
-  </script>
-
 
 
 

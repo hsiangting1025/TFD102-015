@@ -23,26 +23,26 @@ main{
 }
 
 .order{
-  /* border: 1px solid red; */
+  /* border: 1px solid blue; */
   width:980px;
 }
 
 .block1 , .block2  , .block3, .block4, .block5{
   /* border: 1px solid blue; */
-  width:1000px;
+  /* width:1000px; */
   display:flex;
 }
 
 .payment{
   /* border: 1px solid red; */
-  width:1000px;
+  /* width:1000px; */
   display: none;
   flex-direction: column;
 }
 
 .block6,.block7{
   /* border: 1px solid blue; */
-  width:1000px;
+  /* width:1000px; */
   display:flex;
 }
 
@@ -112,6 +112,14 @@ main{
   width:calc(100% - 100px);
   margin: 12px 0 0 0;
 }
+.content4{
+  width:calc(100% - 100px);
+  margin: 12px 0 0 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .content6{
   /* border: 1px solid green; */
@@ -124,9 +132,13 @@ main{
 }
 
 
+.block1 form{
+  display: flex;
+}
+
 .title{
   font-size: 16px;
-  font-weight:400;
+  font-weight:500;
   color:#6B6B6B;
 }
 
@@ -147,8 +159,9 @@ main{
 }
 
 h2{
+  /* border:1px solid red; */
   font-size: 16px;
-  font-weight:400;
+  font-weight:500;
   color:#6B6B6B;
   margin: 0 0 5px 0;
   padding: 0;
@@ -158,6 +171,27 @@ h2{
 
 h2 span{
   font-size: 14px;
+}
+
+.order_tent > span{
+  font-size: 14px;
+  font-weight:400;
+  color:#6B6B6B;
+  margin: 0 0 0px 0;
+  padding: 0;
+  display: flex;
+  align-items:center;
+
+}
+
+/* ------------- step2 ------------- */
+.map_title{
+display: flex;
+align-items: center;
+}
+.order_tent{
+  display: flex;
+  align-items: center;
 }
 
 .order_tent01{
@@ -184,11 +218,12 @@ h2 span{
 
 .map{
   /* border:1px solid red; */
-  width: 900px;
+  width: 100%;
   height: 500px;
   background-image: url("../images/order/map_order.svg") ;
-  background-size: cover;
-  position: relative;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -200,90 +235,96 @@ h2 span{
   width: 50px;
   height: 50px;
   position: absolute;
+  z-index: 10;
 }
 
 .tent2_1 {
-  right:515px;
+  right:500px;
   bottom: 155px;
 }
 .tent2_2 {
-  right:560px;
+  right:545px;
   bottom: 195px;
 }
 .tent2_3 {
-  right:605px;
+  right:590px;
   bottom:235px;
 }
 .tent2_4 {
-  right:650px;
-  bottom: 275px;
+  right:640px;
+  bottom: 270px;
 }
 .tent2_5 {
-  right:405px;
+  right:390px;
   bottom: 55px;
 }
 .tent2_6 {
-  right:360px;
-  bottom: 90px;
+  right:350px;
+  bottom: 95px;
 }
 .tent4_1{
-  right:325px;
+  right:320px;
   bottom: 155px;
 }
 .tent4_2{
-  right:305px;
+  right:300px;
   bottom: 205px;
 }
 .tent4_3{
-  right:285px;
+  right:280px;
   bottom:255px;
 }
 .tent4_4{
-  right:375px;
+  right:370px;
   bottom: 185px;
 }
 .tent4_5{
-  right:355px;
+  right:350px;
   bottom: 235px;
 }
 .tent4_6{
-  right:335px;
+  right:330px;
   bottom:285px;
 }
 
 .tabcontent {
   /* border: 1px solid green; */
   /* width:1140px; */
-  width:260px;
+  /* width:260px; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin:0 20px 40px 0;
+  margin: 0;
+  padding: 0 5px 0 0;
+}
+.tab_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.tabcontent > h1{
+.tab_text > h1{
   /* border: 1px solid blue; */
   font-size: 16px;
-  font-weight:500;
+  font-weight:400;
   line-height:22px;
   color:#875855;
-  text-align:left;
   margin:0;
 }
 
-.tabcontent > h2{
+.tab_text > h2{
   /* border: 1px solid blue; */
   font-size: 14px;
-  font-weight:500;
+  font-weight:400;
   color:#875855;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 0px;
 }
 
-.tabcontent > h6{
+.tab_text > h6{
   /* border: 1px solid blue; */
   font-size: 12px;
-  font-weight:500;
+  font-weight:400;
   line-height:18px;
   color:#6B6B6B;
   margin:10px 0;
@@ -295,11 +336,11 @@ table{
   width: 250px;
   height: 40px;
   table-layout: fixed;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 td{
-  border:1.2px solid #C89D8C;
+  border:1px solid #C89D8C;
   font-size: 14px;
   font-weight:500;
   color:#875855;
@@ -307,6 +348,13 @@ td{
   padding: 5px 0;
 }
 
+
+
+
+/* ------------ step3 ------------- */
+.choose_all{
+display: flex;
+}
 .adult , .child , .baby , .adult_p , .child_p{
   margin: 10px 15px 0 0;
   border: 1.5px solid #6B6B6B;
@@ -346,17 +394,27 @@ h3{
   display: inline-flex;
 }
 
-.block3 p{
+ul{
+  /* border:1px solid blue; */
+  padding: 0 0 0 15px;
+
+}
+.content > ul > li{
+  /* border:1px solid red; */
   font-size: 12px;
   font-weight:500;
-  line-height:20px;
+  line-height:18px;
   color:#6B6B6B;
   margin-top: 15px;
+  margin: 5px 0;
+  padding: 0;
 }
 
+
+/* ------------ step4 step5------------- */
 .block4 form{
   /* border: 1px solid red; */
-  width: calc(100% - 350px - 100px);
+  /* width: calc(100% - 350px - 100px); */
 }
 
 .block4 label{
@@ -403,6 +461,8 @@ h3{
   outline:none;
 }
 
+
+/* ------------ price ------------- */
 .price_total{
   /* border: 1px solid red; */
   width: 350px;
@@ -412,8 +472,19 @@ h3{
   flex-direction: column;
   justify-content:center;
   position: fixed;
-  bottom: 365px;
-  right: 140px;
+  bottom: 51%;
+  right: 10%;
+  z-index: 10;
+}
+
+.price_total02{
+  /* border: 1px solid red; */
+  /* width: 300px; */
+  margin: 30px 20px 70px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:center;
 }
 
 .price_title{
@@ -431,13 +502,13 @@ h3{
   /* margin: 0 10px; */
 }
 
-.price_total h1{
+.price_total h1 , .price_total02 h1{
   /* border: 1px solid blue; */
   font-size: 20px;
   font-weight:500;
   color:#875855;
-  margin:10px 60px 0 60px;
-  height: 40px;
+  /* margin:10px 60px 0 60px; */
+  /* height: 40px; */
 }
 
 .price_content{
@@ -452,6 +523,12 @@ h3{
   font-weight:500;
   color:#6B6B6B;
   margin: 0;
+}
+.price_content h6{
+  font-size: 14px;
+  font-weight:500;
+  color:#6B6B6B;
+  margin: 3px 0 0 5px;
 }
 
 .price_content span{
@@ -472,12 +549,14 @@ h3{
   margin-bottom: 5px;
 }
 
-.price_detail h3 , .price_plus h3{
+.price_detail_ti, .plus_ti{
+  display: flex;
+  align-items: center;
   /* border: 1px solid red; */
   width:calc(100% - 80px)
 }
 
-.price_detail span , .price_plus span{
+.price_detail span , .price_plus > span{
   /* border: 1px solid red; */
   width: 80px;
   align-self: flex-end;
@@ -505,6 +584,8 @@ h3{
   color: #875855;
 }
 
+
+/* ------------ next ------------- */
 .circle{
   width: 30px;
   height: 30px;
@@ -579,7 +660,8 @@ button h4:hover , button p:hover{
   height: 100%;
   overflow: scroll;
   background-color: #ffffff;
-  opacity: .9;
+  opacity: .95;
+  z-index: 20;
 }
 
 .window-content {
@@ -598,7 +680,7 @@ button h4:hover , button p:hover{
   /* border: 1px solid red; */
   padding: 16px;
   text-align: center;
-  padding: 15px 0 0 0;
+  padding: 15px 30px 0 30px;
   display: inline-flex;
   flex-direction: column;
 }
@@ -623,7 +705,12 @@ button h4:hover , button p:hover{
   margin:0;
 }
 
-.window .container > h4 , .window .container > span{
+.window .container ul{
+  padding: 0;
+  margin:5px 0 20px 25px ;
+}
+
+.window .container ul > li , .window .container > span, .window .container > h4{
   /* border: 1px solid blue; */
   font-size: 14px;
   font-weight:500;
@@ -631,6 +718,19 @@ button h4:hover , button p:hover{
   color:#6B6B6B;
   margin:0 0 10px 0;
   text-align: left;
+}
+.window .container ul > li{
+  margin: 0;
+}
+
+.container > ul:nth-child(7) > li:nth-child(5){
+  /* border:1px solid red; */
+  list-style: none;
+}
+
+.container > ul:nth-child(11) > li:nth-child(5){
+  /* border:1px solid red; */
+  list-style: none;
 }
 
 .window .container > span{
