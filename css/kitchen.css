@@ -29,6 +29,8 @@ main{
   width:1000px;
   /* display: flex; */
   /* justify-content: flex-start; */
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .block1{

@@ -30,6 +30,7 @@ main{
   width:1000px;
   display: flex;
   justify-content: flex-start;
+  overflow-x: hidden;
 }
 
 .activities_r{
@@ -37,6 +38,7 @@ main{
   width:1000px;
   display: flex;
   justify-content: flex-end;
+  overflow-x: hidden;
 }
 
 .activities_l > img , .activities_r > img{
@@ -114,6 +116,7 @@ h1 > span{
   width: 850px;
   align-self: flex-start;
   margin:10px 0 10px 70px;
+  overflow-x: hidden;
 }
 
 .guideline_r{
@@ -123,6 +126,7 @@ h1 > span{
   width: 850px;
   align-self: flex-end;
   margin:10px 70px 10px 0;
+  overflow-x: hidden;
 }
 
 

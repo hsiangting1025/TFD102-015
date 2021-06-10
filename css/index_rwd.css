@@ -1204,7 +1204,7 @@
     }
 }
 
-@media (min-width: 376px) and (max-width: 449px){
+@media (min-width: 377px) and (max-width: 449px){
     div.parent_bt{
         width:100%;
         top:30px;
@@ -1267,7 +1267,7 @@
     }
 }
 
-@media (min-width: 360px) and (max-width: 375px){
+@media (min-width: 360px) and (max-width: 376px){
     div.parent_bt{
         width:100%;
         top:30px;

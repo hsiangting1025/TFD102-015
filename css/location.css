@@ -27,6 +27,8 @@ main{
 .location{
   /* border: 1px solid red; */
   width:1000px;
+  overflow-x: hidden;
+
 }
 
 .block1{
