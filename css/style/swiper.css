@@ -1,8 +1,13 @@
 .swiper-container{
   /* border:1px solid yellow; */
   width: 590px;
-  position: absolute;
+  /* ----- 最原始 ------ */
+  /* position: absolute; */
+  /* ----- 修正改 ------ */
+  position: relative;
   top:-125px;
+  /* ----- 修正加上 ------ */
+  overflow: hidden;
 }
 
 .mySwiper2, .mySwiper4 , .mySwiper6, .mySwiper8{
@@ -57,7 +62,10 @@
 @media (min-width: 768px) and (max-width: 991px){
   .swiper-container{
     width: 590px;
-    position: absolute;
+  /* ----- 最原始 ------ */
+  /* position: absolute; */
+  /* ----- 修正改 ------ */
+  position: relative;
     top:-165px;
   }
   
@@ -116,7 +124,10 @@
 @media (min-width: 576px) and (max-width: 767px){
   .swiper-container{
     width: 590px;
-    position: absolute;
+  /* ----- 最原始 ------ */
+  /* position: absolute; */
+  /* ----- 修正改 ------ */
+  position: relative;
     top:30px;
   }
   
@@ -174,7 +185,10 @@
 @media (min-width: 370px) and (max-width: 575px){
   .swiper-container{
     width: 355px;
-    position: absolute;
+  /* ----- 最原始 ------ */
+  /* position: absolute; */
+  /* ----- 修正改 ------ */
+  position: relative;
     top:30px;
   }
   
@@ -231,7 +245,10 @@
 @media screen and (max-width: 369px){
   .swiper-container{
     width: 300px;
-    position: absolute;
+  /* ----- 最原始 ------ */
+  /* position: absolute; */
+  /* ----- 修正改 ------ */
+  position: relative;
     top:20px;
   }
   
